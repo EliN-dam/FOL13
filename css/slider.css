@@ -21,12 +21,16 @@
         opacity: 1;
     }
 
+        /*.content-container .slider .images .slide.current .link> a {
+            pointer-events: auto;
+        }*/
+
         .content-container .slider .images .slide.current .title {
             opacity: 1;
             transform: translateX(-28rem);
             transition: all .7s ease-in-out .3s;
         }
-        
+       
     .content-container .slider .images .slide:first-child  {
        background: url("../images/camilo-jimenez-unsplash.jpg") no-repeat 85% 50%/cover;
     }
@@ -53,7 +57,7 @@
             padding: 1.5rem;
             opacity: 0;
             text-decoration: none;
-            cursor: pointer;
+            /*z-index: 1; !!!!*/
         }
 
             .content-container .slider .images .slide .title h2 {
