@@ -1,0 +1,13 @@
+.content-container {
+    position: relative;
+}
+
+    .content-container .bg-layer {
+        position: absolute;
+        top: -1.875rem; /* ¿? */
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: var(--grisOscuroBG);
+        transition: height .5s ease;
+    }

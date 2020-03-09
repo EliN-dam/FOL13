@@ -1,10 +1,10 @@
-a {
+header a {
     text-decoration: none;
     color: inherit;
     transition: color .5s ease-in-out;
 }
 
-button {
+header button {
     cursor: pointer;
     display: flex;
     background: var(--azulOscuro);
@@ -15,7 +15,7 @@ button {
     transition: background-color 1s ease;
 }
 
-    button span {
+    header button span {
         width: 2rem;
         height: 2rem;
         line-height: 2rem;
@@ -24,17 +24,17 @@ button {
         color: var(--grisClaro);
     }
 
-    button.active {
+    header button.active {
         background: var(--naranja);
         color: #000;
     }
 
-        button.active::after {
+        header button.active::after {
             transform: translateX(2rem);
             left: unset;
         }
     
-    button::after {
+    header button::after {
         content: "";
         display: block;
         width: 2rem;
@@ -57,34 +57,34 @@ header {
     height: 4.375rem;
 }
 
-nav {
+header nav {
     width: 55rem;
 }
 
-    nav ul {
+    header nav ul {
         display: flex;
         justify-content: space-between;
     }
 
-        nav ul li {
+        header nav ul li {
             display: inline-block;
         }
            
-            nav ul li a:hover {
+            header nav ul li a:hover {
                 color: var(--naranja);
             }  
 
-.logo {
+header .logo {
     font-size: 44px;
     font-weight: bold;
     color: #FFF;
 }
 
-    .logo span {
+    header .logo span {
         color: var(--azulClaro);
         transition: color .5s ease-in-out;
     }
 
-    .logo .enlace:hover > span {
+    header .logo .enlace:hover > span {
         color: var(--naranja);
     }
