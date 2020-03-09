@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap');
+
+:root {
+    --azulClaro: #3399FF;
+    --azulOscuro: #225F9D;
+    --naranja: #FF9F27;
+    --grisUI: #212121;
+    --grisSubtitulos: #292929;
+    --grisOscuroBG: #2E2E2E;
+    --grisLetra: #707070;
+    --grisClaro: #E1E1E1;
+    --rojo: #820000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--grisClaro);
+}
+
+html {
+    font-size: 16px;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}

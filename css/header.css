@@ -1,0 +1,90 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color .5s ease-in-out;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    background: var(--azulOscuro);
+    border: none;
+    outline: none;
+    border-radius: 62.5rem;
+    position: relative;
+    transition: background-color 1s ease;
+}
+
+    button span {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        display: block;
+        background: none;
+        color: var(--grisClaro);
+    }
+
+    button.active {
+        background: var(--naranja);
+        color: #000;
+    }
+
+        button.active::after {
+            transform: translateX(2rem);
+            left: unset;
+        }
+    
+    button::after {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        background: #fff;
+        left: 0;
+        right: unset;
+        border-radius: 50%;
+        transition: transform .5s ease;
+        box-shadow: 0 0 2px 2px #00000033;
+    }
+
+header {
+    background: var(--grisUI);
+    color: var(--grisClaro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4.375rem;
+}
+
+nav {
+    width: 55rem;
+}
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        nav ul li {
+            display: inline-block;
+        }
+           
+            nav ul li a:hover {
+                color: var(--naranja);
+            }  
+
+.logo {
+    font-size: 44px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+    .logo span {
+        color: var(--azulClaro);
+        transition: color .5s ease-in-out;
+    }
+
+    .logo .enlace:hover > span {
+        color: var(--naranja);
+    }
