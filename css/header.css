@@ -12,7 +12,8 @@ header button {
     outline: none;
     border-radius: 62.5rem;
     position: relative;
-    transition: background-color 1s ease;
+    transition: all 1s ease;
+    text-shadow: var(--sombraIconos);
 }
 
     header button span {
@@ -26,7 +27,6 @@ header button {
 
     header button.active {
         background: var(--naranja);
-        color: #000;
     }
 
         header button.active::after {
@@ -55,6 +55,7 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 4.375rem;
+    width: 100%;
 }
 
 header nav {

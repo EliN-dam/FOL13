@@ -2,7 +2,8 @@
     position: relative;
     margin: 1.875rem auto;
     height: 56.25rem;
-    width: 53.5625rem;
+    width: 70%;
+    max-width: 53.5625rem;
     box-shadow: 0 3px 6px #000000B3;
     overflow: hidden;
 }
@@ -21,14 +22,16 @@
         opacity: 1;
     }
 
-        /*.content-container .slider .images .slide.current .link> a {
-            pointer-events: auto;
-        }*/
-
         .content-container .slider .images .slide.current .title {
             opacity: 1;
-            transform: translateX(-28rem);
+            z-index: 1;
+            transform: translateX(-31rem);
             transition: all .7s ease-in-out .3s;
+        }
+
+        .content-container .slider .images .slide.current .title:hover h1 {
+            color: var(--naranja);
+            text-shadow: var(--sombraIconos);
         }
        
     .content-container .slider .images .slide:first-child  {
@@ -36,32 +39,35 @@
     }
 
     .content-container .slider .images .slide:nth-child(2)  {
-       
+        background: url("../images/first-aid-850489.jpg") no-repeat center center/cover;
     }
 
     .content-container .slider .images .slide:nth-child(3)  {
-       
+       background: url("../images/creators-collective-unsplash.jpg") no-repeat 40% 50%/cover;
     }
 
     .content-container .slider .images .slide:last-child  {
-       
+       background: url("../images/person-help-race-pxhere.com.jpg") no-repeat center center/cover;
     }
     
         .content-container .slider .images .slide .title {
-            width: 28rem;
+            width: 31rem;
             position: absolute;
             top: 4.0625rem;
-            right: -28rem;
+            right: -31rem;
             background: #FFFFFFB3;
             color: var(--grisSubtitulos);
             padding: 1.5rem;
             opacity: 0;
             text-decoration: none;
-            /*z-index: 1; !!!!*/
         }
 
+            .content-container .slider .images .slide .title h1 {
+                transition: all 1s ease;
+            }
+
             .content-container .slider .images .slide .title h2 {
-                font-weight: normal;
+                font-weight: normal; 
             }
     
     .content-container .slider .nav button {
@@ -73,11 +79,15 @@
         top: 50%;
         border: none;
         outline: none;
-        font-size: 44px;
+        font-size: 40px;
+        transform: scale(.7);
+        transition: all 1s ease-in-out;
     }
 
-        .content-container .slider .nav button:hover {
+        .content-container .slider .nav button:hover {           
             opacity: 1;
+            transform: scale(1);
+            /*text-shadow: var(--sombraIconos);*/
         }
 
         .content-container .slider .nav button#prev {
