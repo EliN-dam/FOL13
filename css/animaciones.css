@@ -1,0 +1,5 @@
+
+@keyframes cargarTitulo-P1 {
+    from { transform: translateX(0); }
+    to { transform: translateX(48rem); }
+}

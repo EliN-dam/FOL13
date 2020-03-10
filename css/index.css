@@ -1,3 +1,7 @@
+header .logo {
+    cursor: default;
+}
+
 .content-container .bg-layer { 
-    height: 50%;
+    height: 50vh;
 }

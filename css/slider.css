@@ -4,8 +4,9 @@
     height: 56.25rem;
     width: 70%;
     max-width: 53.5625rem;
-    box-shadow: 0 3px 6px #000000B3;
+    box-shadow: var(--sombraCajas);
     overflow: hidden;
+    background: var(--grisClaro);
 }
 
     .content-container .slider .images .slide {
@@ -15,7 +16,7 @@
         top: 0;
         left: 0;
         opacity: 0;
-        transition: opacity .4s ease-in-out;
+        transition: opacity .6s ease-in-out;
     }
 
     .content-container .slider .images .slide.current {
@@ -90,10 +91,10 @@
             /*text-shadow: var(--sombraIconos);*/
         }
 
-        .content-container .slider .nav button#prev {
-            left: 1rem;
-        }
-
         .content-container .slider .nav button#next {
             right: 1rem;
+        }
+
+        .content-container .slider .nav button#prev {
+            left: 1rem;
         }

@@ -59,6 +59,7 @@ header {
 }
 
 header nav {
+    /* cambiar width por max-width y cambiar a % el width */
     width: 55rem;
 }
 
@@ -86,6 +87,10 @@ header .logo {
         transition: color .5s ease-in-out;
     }
 
-    header .logo .enlace:hover > span {
+    header .logo.index span {
+        color: var(--naranja);
+    }
+
+    header .logo:hover:not(.index) span {
         color: var(--naranja);
     }

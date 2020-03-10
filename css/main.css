@@ -14,6 +14,7 @@
 
     /* Sombras */
     --sombraIconos: 1px 1px 2px #212121;
+    --sombraCajas: 0 3px 6px #000000B3;
 }
 
 * {
@@ -36,14 +37,14 @@ html {
 
     .content-container .bg-layer { 
         position: absolute;
-        top: -1.875rem; /* ¿? */
+        top: -1.875rem; /* padding del slider */
         left: 0;
         width: 100%;
-        height: 50%;
         background: var(--grisOscuroBG);
-        transition: height .5s ease;
+        transition: height .5s linear;
+        z-index: -1;
     }
-
+    
 .lato {
     font-family: 'Lato', sans-serif;
 }

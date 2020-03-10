@@ -1,0 +1,8 @@
+header nav ul li:nth-child(3) a {
+    color: var(--naranja);
+    cursor: default;
+}
+
+.content-container .bg-layer { 
+    height: 30vh;
+}
