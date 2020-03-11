@@ -41,13 +41,17 @@ html {
         top: -1.875rem; /* padding del slider */
         left: 0;
         width: 100%;
-        background: var(--grisOscuroBG);
-        transition: height .5s linear;
+        background: var(--grisOscuroBG);      
         z-index: -1;
     }
 
-        .content-container .bg-layer.night {
+        .content-container .bg-layer.night {  
             height: 106.7%; /* 100% + los dos paddings del contenido */
+        }
+
+        body.transitions-night-mode-on .content-container .bg-layer {
+            /* Sólo aplica la transición cuando la página esta cargada. */
+            transition: height .5s linear;
         }
     
 .lato {

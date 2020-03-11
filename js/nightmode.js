@@ -19,3 +19,8 @@ if (localStorage.getItem('night-mode') == 'true') {
     nightMode.classList.remove('active');
     bgLayer.classList.remove('night');
 }
+
+window.onload = function() {
+    // Sólo aplica la transición cuando la página esta cargada.
+    document.body.classList.add('transitions-night-mode-on');
+}

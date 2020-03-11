@@ -22,9 +22,9 @@ footer {
             display: flex;
             flex-wrap: wrap;
             align-content: center;
-            
-            /*width: 20%;
-            max-width: 8.125rem;  CORREGIR*/
+            margin-left: 4rem; /* ALTERNATIVAS¿? */
+            width: 20%;
+            max-width: 8.125rem;
         }
 
         footer .content .nav {

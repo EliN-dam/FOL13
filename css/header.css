@@ -44,9 +44,13 @@ header button {
         left: 0;
         right: unset;
         border-radius: 50%;
-        transition: transform .5s ease;
         box-shadow: 0 0 2px 2px #00000033;
     }
+
+        body.transitions-night-mode-on header button::after {
+            /* Sólo aplica la transición cuando la página esta cargada. */
+            transition: transform .5s ease;
+        }
 
 header {
     background: var(--grisUI);
@@ -84,7 +88,7 @@ header nav {
 
 
 header .logo {
-    font-size: 44px;
+    font-size: 2.75rem;
     font-weight: bold;
     color: #FFF;
 }
