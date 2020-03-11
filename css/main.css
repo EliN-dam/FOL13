@@ -14,7 +14,8 @@
 
     /* Sombras */
     --sombraIconos: 1px 1px 2px #212121;
-    --sombraCajas: 0 3px 6px #000000B3;
+    --sombraCajas: 0 2px 4px #212121B3;
+    --sombraCajaPequeña: 0 1px 3px #21212166;
 }
 
 * {
@@ -44,6 +45,10 @@ html {
         transition: height .5s linear;
         z-index: -1;
     }
+
+        .content-container .bg-layer.night {
+            height: 106.7%; /* 100% + los dos paddings del contenido */
+        }
     
 .lato {
     font-family: 'Lato', sans-serif;

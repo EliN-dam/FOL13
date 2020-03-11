@@ -4,7 +4,7 @@ header nav ul li:first-child a {
 }
 
 .content-container .bg-layer { 
-    height: 30vh;
+    height: 20vh;
 }
 
 .content-container .content {
@@ -12,33 +12,76 @@ header nav ul li:first-child a {
     color: var(--grisLetra);
     margin: 1.875rem auto;
     padding: 1.875rem;
-    width: 85%;
-    /* añadir max-width: ; */
+    width: 90%;
+    max-width: 80rem;
     box-shadow: var(--sombraCajas);
     display: grid;
-    grid-gap: 1.857rem;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas: 'titulo titulo titulo'
-                         'texto  texto  imagen'
+    row-gap: .9rem;
+    column-gap: 1.875rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 0 repeat(2, auto) 0 auto 
+                        0 auto 0 auto 0 repeat(3, auto);
+    grid-template-areas: "titulo  titulo  titulo"
+                         ".       .       ."
+                         "texto1  texto1  imagen1"
+                         "texto2  texto2  imagen1"
+                         ".       .       imagen1"
+                         "sub1    sub1    imagen1"
+                         ".       .       imagen1"
+                         "texto3  texto3  imagen1"
+                         ".       .       imagen1"
+                         "imagen2 sub2    sub2"
+                         "imagen2 .       ."
+                         "imagen2 texto4  texto4"
+                         "imagen2 texto5  texto5"
+                         "imagen2 texto6  texto6"
                          ;
     overflow: hidden;
 }
-    .content-container .content .image {
-        grid-area: imagen;    
+
+    .content-container .content .image { 
+        box-shadow: var(--sombraCajaPequeña);
     }
 
-    .content-container .content p {
-        grid-area: texto;
+        .content-container .content .image.one { 
+            grid-area: imagen1;
+            background: url("../images/andrei-slobtsov-unsplash.jpg") no-repeat center center/cover;
+        }
+
+        .content-container .content .image.two {
+            grid-area: imagen2;
+            background: url("../images/sebastian-j-unsplash.jpg") no-repeat center center/cover;
+        }
+
+    .content-container .content .parrafo.one { grid-area: texto1; }
+    .content-container .content .parrafo.two { grid-area: texto2; }
+    .content-container .content .parrafo.three { grid-area: texto3; }
+    .content-container .content .parrafo.four { grid-area: texto4; }
+    .content-container .content .parrafo.five { grid-area: texto5; }
+    .content-container .content .parrafo.six { grid-area: texto6; }
+        
+        .content-container .content .parrafo.three ol {
+            padding-left: 1.875rem;
+        }
+        
+        .content-container .content .parrafo.four ul {
+            padding-left: 2rem;
+        }
+
+    .content-container .content .subtitle {
+        color: var(--grisSubtitulos);
     }
+        .content-container .content .subtitle.one { grid-area: sub1; }
+        .content-container .content .subtitle.two { grid-area: sub2; }
 
     .content-container .content .title {
         background: var(--grisOscuroBG);
         color: var(--naranja);
-        width: 48rem;
+        width: 58rem;
         padding: .75rem;
         position: relative;
-        left: -49.875rem;
+        left: -59.875rem;
+        font-size: 1.2rem;
         animation: cargarTitulo-P1 .7s ease-in-out .3s forwards;
         grid-area: titulo;
     }

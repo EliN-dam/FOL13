@@ -59,8 +59,8 @@ header {
 }
 
 header nav {
-    /* cambiar width por max-width y cambiar a % el width */
-    width: 55rem;
+    max-width: 55rem;
+    width: 60%;
 }
 
     header nav ul {

@@ -1,5 +1,88 @@
+.fadeIn, .slideUp, .zoomIn {
+    opacity: 0;
+}
 
 @keyframes cargarTitulo-P1 {
     from { transform: translateX(0); }
-    to { transform: translateX(48rem); }
+    to { transform: translateX(58rem); }
+}
+
+.fadeIn {
+    animation: FadeIn 1.5s ease-in-out .3s forwards;
+}
+
+    .fadeIn.s05 {
+        animation: FadeIn .5s ease-in-out .3s forwards;
+    }
+
+    .fadeIn.s1 {
+        animation: FadeIn 1s ease-in-out .3s forwards;
+    }
+
+@keyframes FadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes FadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.slideUp {
+    transform: translateY(2rem);
+    animation: SlideUp .5s ease 1s forwards;    
+}
+
+@keyframes SlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes SlideDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+}
+
+.zoomIn {
+    transform-origin: bottom left;
+    animation: ZoomIn 1s ease .3s forwards;
+}
+
+@keyframes ZoomIn {
+    from {
+        opacity: 0;
+        transform: scale(.3);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes ZoomOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(.3);
+    }
 }
