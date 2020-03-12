@@ -1,19 +1,4 @@
-.content-container .bg-layer { 
-    height: 20vh;
-}
-
-.content-container .content {
-    background: #fff;
-    color: var(--grisLetra);
-    margin: 1.875rem auto;
-    padding: 1.875rem;
-    width: 90%;
-    max-width: 80rem;
-    box-shadow: var(--sombraCajas);
-    display: grid;
-    row-gap: .9rem;
-    column-gap: 1.875rem;
-    grid-template-columns: repeat(3, 1fr);
+.content-container .content {   
     grid-template-rows: auto 0 repeat(2, auto) 0 auto 
                         0 auto 0 auto 0 repeat(3, auto);
     grid-template-areas: "titulo  titulo  titulo"
@@ -29,14 +14,8 @@
                          "imagen2 .       ."
                          "imagen2 texto4  texto4"
                          "imagen2 texto5  texto5"
-                         "imagen2 texto6  texto6"
-                         ;
-    overflow: hidden;
+                         "imagen2 texto6  texto6";   
 }
-
-    .content-container .content .image { 
-        box-shadow: var(--sombraCajaPequeña);
-    }
 
         .content-container .content .image.one { 
             grid-area: imagen1;
@@ -63,20 +42,11 @@
             padding-left: 2rem;
         }
 
-    .content-container .content .subtitle {
-        color: var(--grisSubtitulos);
-    }
         .content-container .content .subtitle.one { grid-area: sub1; }
         .content-container .content .subtitle.two { grid-area: sub2; }
 
     .content-container .content .title {
-        background: var(--grisOscuroBG);
-        color: var(--naranja);
         width: 58rem;
-        padding: .75rem;
-        position: relative;
         left: -59.875rem;
-        font-size: 1.2rem;
         animation: cargarTitulo-P1 .7s ease-in-out .3s forwards;
-        grid-area: titulo;
     }

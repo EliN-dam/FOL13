@@ -1,4 +1,4 @@
-.fadeIn, .slideUp, .zoomIn {
+.fadeIn, .fadeIn.s05, .fadeIn.s1, .fadeIn.s1.r1, .slideUp, .zoomIn {
     opacity: 0;
 }
 
@@ -19,6 +19,10 @@
         animation: FadeIn 1s ease-in-out .3s forwards;
     }
 
+    .fadeIn.s1.r06 {
+        animation: FadeIn 1s ease-in-out .6s forwards;
+    }
+
 @keyframes FadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -33,6 +37,11 @@
     transform: translateY(2rem);
     animation: SlideUp .5s ease 1s forwards;    
 }
+
+    .slideUp.r05 {
+        transform: translateY(2rem);
+        animation: SlideUp .5s ease .5s forwards;    
+    }
 
 @keyframes SlideUp {
     from {

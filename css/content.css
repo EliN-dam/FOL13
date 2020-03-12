@@ -1,0 +1,185 @@
+.content-container .bg-layer { 
+    height: 25vh;
+}
+
+.content-container .content {
+    background: #fff;
+    color: var(--grisLetra);
+    margin: 1.875rem auto;
+    padding: 1.875rem;
+    width: 90%;
+    max-width: 80rem;
+    box-shadow: var(--sombraCajas);
+    display: grid;
+    row-gap: .9rem;
+    column-gap: 1.875rem;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    position: relative;
+}
+
+    .content-container .content .image { 
+        box-shadow: var(--sombraCajaPequeña);
+    }
+
+    .content-container .content .subtitle {
+        color: var(--grisSubtitulos);
+    }
+
+    .content-container .content .title {
+        background: var(--grisOscuroBG);
+        color: var(--naranja);
+        padding: .75rem;
+        position: relative;
+        font-size: 1.2rem;
+        grid-area: titulo;
+    }
+
+.content-container .overlay {
+    background: #00000066;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+    .content-container .overlay.active {
+        visibility: visible;
+    }
+
+    .content-container .overlay .popup {
+        background: var(--grisClaro);
+        box-shadow: var(--sombraCajas);
+        width: 36rem;
+        padding: 2rem;
+        transition: all .3s ease;
+        opacity: 0;
+        transform: scale(.7);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .content-container .overlay .popup.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .content-container .overlay .popup .botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+            .content-container .overlay .popup .botones>input {
+                cursor: pointer;
+                border: none;
+                border-radius: 7px;
+                color: #FFF;
+                font-size: 1.125rem;
+                padding: 0.5625rem 2rem;
+                transition: background-color .5s ease-in-out;
+            }
+
+                .content-container .overlay .popup .botones .enviar {
+                    background: var(--azulClaro);
+                }
+
+                    .content-container .overlay .popup .botones .enviar:hover {
+                        background: var(--azulOscuro);
+                    }
+
+                .content-container .overlay .popup .botones .limpiar {
+                    background: var(--naranja);
+                }
+
+                    .content-container .overlay .popup .botones .limpiar:hover {
+                        background: var(--naranjaOscuro);
+                    }
+        
+        .content-container .overlay .popup button {
+            font-size: 24px;
+            list-style: 24px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: transparent;
+            color: var(--grisLetra);
+            transition: color .5s ease-in-out;
+        } 
+
+            .content-container .overlay .popup button:hover {
+                color: var(--grisUI);
+            }
+
+        .content-container .overlay .popup form .campos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+            .content-container .overlay .popup .campos > select,
+            .content-container .overlay .popup .campos > textarea {
+                flex-basis: 100%;
+                margin-bottom: 1.5625rem;
+                font-size: 1rem;
+                color: var(--grisLetra);
+                -webkit-box-shadow: inset 0 17px 19px -17px #66898989;
+                -moz-box-shadow: inset 0 17px 19px -17px #66898989;
+                box-shadow: inset 0 17px 19px -17px #66898989;
+                border: none;
+            }
+    
+            .content-container .overlay .popup form .campos select {
+                padding: .2em;
+            }
+
+            .content-container .overlay .popup form .campos textarea {
+                padding: .5em;
+                resize: none;
+            }
+            
+            .content-container .overlay .popup form textarea:focus, 
+            .content-container .overlay .popup form select:focus {
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                outline-color: var(--naranja);
+            }
+
+        .content-container .overlay .popup .title {
+            margin-bottom: 1.875rem;
+            text-align: center;
+        }
+
+            .content-container .overlay .popup .title h1>span {
+                color: var(--rojo);
+            }
+
+.content-container .report button {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: transparent;
+    color: var(--grisSubtitulos);
+    font-size: 2.25rem;
+    text-shadow: var(--sombraIconos);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    opacity: .8;
+    transform: scale(.9);
+    transition: all 1s ease-in-out;
+}
+
+    .content-container .report button:hover {
+        opacity: 1;
+        transform: scale(1.2);
+        color: var(--rojo);
+    }

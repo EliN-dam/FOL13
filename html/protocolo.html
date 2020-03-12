@@ -6,6 +6,7 @@
     <title>Protocolo de actuación</title>
     <link rel="stylesheet" href="../css/main.css" type="text/css"/>
     <link rel="stylesheet" href="../css/header.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/content.css" type="text/css"/>
     <link rel="stylesheet" href="../css/protocolo.css" type="text/css"/>
     <link rel="stylesheet" href="../css/footer.css" type="text/css"/>
     <link rel="stylesheet" href="../css/animaciones.css" type="text/css"/>
@@ -97,7 +98,33 @@
                    teléfonos de urgencias.</p>
             </div>
             <div class="image one zoomIn"></div>
-            <div class="image two zoomIn"></div>
+            <div class="image two zoomIn"></div>        
+            <div class="report">
+                <button id="report"><i class="fas fa-exclamation-circle"></i></button>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <button id="cerrar"><i class="fas fa-times"></i></button>
+                <div class="title">
+                    <h1 class="roboto" id="titulo">Reportar un <span>error</span></h1>
+                </div>
+                <form action="" method="post">
+                    <div class="campos" id="campos">
+                        <select name="seccion" id="seccion" class="opensans">
+                            <option value="protocolo">Protocolo de actuación</option>
+                            <option value="urgencia">Urgencia médica</option>
+                            <option value="clasificacion">Clasificación de los heridos</option>
+                            <option value="tecnicas">Técnicas de primeros auxilios</option>
+                        </select>
+                        <textarea name="descripcion" id="descripcion" class="opensans" cols="10" rows="4" placeholder="Describe el error..."></textarea>
+                    </div>
+                    <div class="botones">
+                        <input type="submit" name="submit" class="enviar lato" value="Enviar"/>
+                        <input type="reset" name="reset" class="limpiar lato" value="Limpiar"/>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <footer>
@@ -146,5 +173,6 @@
         </div>
     </footer>
     <script src="../js/nightmode.js"></script>
+    <script src="../js/popup.js"></script>
 </body>
 </html>
