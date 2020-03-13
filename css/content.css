@@ -16,13 +16,37 @@
     grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
     position: relative;
+    transition: all .5s ease-in-out;
 }
 
     .content-container .content .image { 
         box-shadow: var(--sombraCajaPequeña);
     }
 
+    .content-container .content .report button {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        background: transparent;
+        color: var(--grisSubtitulos);
+        font-size: 2.25rem;
+        text-shadow: var(--sombraIconos);
+        cursor: pointer;
+        border: none;
+        outline: none;
+        opacity: .8;
+        transform: scale(.9);
+        transition: all 1s ease-in-out;
+    }
+    
+        .content-container .content .report button:hover {
+            opacity: 1;
+            transform: scale(1.2);
+            color: var(--rojo);
+        }
+
     .content-container .content .subtitle {
+        transition: color 1s ease-in-out;
         color: var(--grisSubtitulos);
     }
 
@@ -32,9 +56,10 @@
         padding: .75rem;
         position: relative;
         font-size: 1.2rem;
+        transition: background-color .5s ease-in-out;
         grid-area: titulo;
     }
-
+    
 .content-container .overlay {
     background: #00000066;
     position: fixed;
@@ -161,25 +186,3 @@
             .content-container .overlay .popup .title h1>span {
                 color: var(--rojo);
             }
-
-.content-container .report button {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    background: transparent;
-    color: var(--grisSubtitulos);
-    font-size: 2.25rem;
-    text-shadow: var(--sombraIconos);
-    cursor: pointer;
-    border: none;
-    outline: none;
-    opacity: .8;
-    transform: scale(.9);
-    transition: all 1s ease-in-out;
-}
-
-    .content-container .report button:hover {
-        opacity: 1;
-        transform: scale(1.2);
-        color: var(--rojo);
-    }

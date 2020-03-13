@@ -3,21 +3,21 @@ const nightMode = document.getElementById('night-mode'),
 
 nightMode.addEventListener('click', function() {
     nightMode.classList.toggle('active');
-    bgLayer.classList.toggle('night');
+    document.body.classList.toggle('night');
 
     //Guardar el estado en localstorage
-    if (bgLayer.classList.contains('night'))
+    if (document.body.classList.contains('night'))
         localStorage.setItem('night-mode', 'true');
     else
         localStorage.setItem('night-mode', 'false');
 })
 
 if (localStorage.getItem('night-mode') == 'true') {
-    nightMode.classList.toggle('active');
-    bgLayer.classList.toggle('night');
+    nightMode.classList.add('active');
+    document.body.classList.add('night');
 } else {
     nightMode.classList.remove('active');
-    bgLayer.classList.remove('night');
+    document.body.classList.remove('night');
 }
 
 window.onload = function() {

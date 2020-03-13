@@ -1,0 +1,54 @@
+body.night .content-container .bg-layer {  
+    height: 106.7%; /* 100% + los dos paddings del contenido */
+}
+
+body.night .content-container .content {
+    background: #272727;
+    color: #C8C8C8;
+}
+
+    body.night .content-container .content .report button,
+    body.night .content-container .content .subtitle,
+    body.night .content-container .overlay .popup .title
+      {
+        color: var(--grisClaro);
+    }
+
+        body.night .content-container .content .report button:hover {
+            color: var(--rojo);
+        }
+    
+    body.night .content-container .overlay .popup .campos > select,
+    body.night .content-container .overlay .popup .campos > textarea {
+        background-color: var(--grisSubtitulos);
+        color: #C8C8C8;     
+    }
+
+    body.night .content-container .overlay .popup .campos > textarea::-webkit-input-placeholder {
+        color: #C8C8C8;
+    }
+    
+    body.night .content-container .overlay .popup .campos > textarea::-moz-placeholder {
+        color: #C8C8C8;
+    }
+
+    body.night .content-container .overlay .popup .campos > textarea::-ms-input-placeholder {
+        color: #C8C8C8;
+    }
+
+    body.night .content-container .overlay .popup .campos > textarea::placeholder {
+        color: #C8C8C8;
+    }
+
+    body.night .content-container .overlay .popup button {
+        color: var(--grisLetra);
+    }
+
+        body.night .content-container .overlay .popup button:hover {
+            color: var(--grisClaro);
+        }
+
+    body.night .content-container .content .title,
+    body.night .content-container .overlay .popup {
+        background-color: var(--grisUI);
+    }
