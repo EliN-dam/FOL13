@@ -1,21 +1,26 @@
 .content-container .content {   
-    grid-template-rows: repeat(16, auto);
+    grid-template-rows: repeat(21, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."
-                         "tabla1  tabla1  texto1"
-                         "tabla1  tabla1  texto2"
-                         "tabla1  tabla1  sub1"
+                         "texto1  texto1  sub1"
+                         "texto2  texto2  imagen1"
                          "tabla1  tabla1  imagen1"
-                         "tabla1  tabla1  imagen1"
-                         "texto3  texto3  imagen1"
+                         "texto3  texto3  texto3"
                          ".       .       ."
                          "sub2    sub2    ."
                          ".       .       ."
                          "texto4  texto4  texto4"
                          ".       .       ."
-                         "sub3    sub3    imagen2"
-                         ".       .       imagen2"
-                         "texto5  texto5  imagen2";   
+                         "sub3    sub3    ."
+                         ".       .       ."
+                         "texto5  texto5  imagen2"
+                         ".       .       ."
+                         "sub4    sub4    ."
+                         ".       .       ."
+                         "texto6  texto6  texto6"
+                         "texto7  imagen3 imagen3"
+                         "texto8  imagen3 imagen3"
+                         "texto9  imagen3 imagen3";   
 }
 
     .content-container .content .image.one { 
@@ -24,9 +29,20 @@
         box-shadow: none;
     }
 
+        /* Night-mode */
+        body.night .content-container .content .image.one {
+            background: url("../images/soporte-vital-basico_night.png") no-repeat center center/contain;
+        }
+
     .content-container .content .image.two {
         grid-area: imagen2;
-        background: url("../images/muerte-subita.jpg") no-repeat center center/cover;
+        /* ¿Cambiar imagen? */
+        background: url("../images/rescue-breathing.jpg") no-repeat center center/cover;
+    }
+
+    .content-container .content .image.three { 
+        grid-area: imagen3;
+        background: url("../images/71212.jpg") no-repeat center center/cover;
     }
 
     .content-container .content .parrafo.one { grid-area: texto1; }
@@ -34,12 +50,14 @@
     .content-container .content .parrafo.three { grid-area: texto3; }
     .content-container .content .parrafo.four { grid-area: texto4; }
     .content-container .content .parrafo.five { grid-area: texto5; }
-    /*.content-container .content .parrafo.six { grid-area: texto6; }*/
+    .content-container .content .parrafo.six { grid-area: texto6; }
+    .content-container .content .parrafo.seven { grid-area: texto7; }
+    .content-container .content .parrafo.eight { grid-area: texto8; }
+    .content-container .content .parrafo.nine { grid-area: texto9; }
 
-        .content-container .content .parrafo.three p,
-        .content-container .content .parrafo.four p,
-        .content-container .content .parrafo.five p { 
-            margin-bottom: .5rem;
+        .content-container .content .parrafo.six  ol > p {
+            margin-top: .5rem;
+            padding-left: -5rem;
         }
 
     .content-container .content .subtitle.one { 
@@ -49,6 +67,7 @@
 
     .content-container .content .subtitle.two { grid-area: sub2; }
     .content-container .content .subtitle.three { grid-area: sub3; }
+    .content-container .content .subtitle.four { grid-area: sub4; }
 
     .content-container .content .table.one { grid-area: tabla1; }
    
@@ -57,8 +76,3 @@
         left: -42.875rem;
         animation: cargarTitulo-P2 .7s ease-in-out .3s forwards;
     }
-
-/*      Night-mode      */
-body.night .content-container .content .image.one {
-    background: url("../images/soporte-vital-basico_night.png") no-repeat center center/contain;
-}

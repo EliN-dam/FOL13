@@ -44,6 +44,10 @@
         padding-left: 1rem;
     }
 
+    .content-container .content .parrafo p {
+        margin-bottom: .5rem;
+    }
+
     .content-container .content .parrafo ul {
         padding-left: 2rem;
     }
@@ -78,6 +82,7 @@
         .content-container .content .table table tr th {
             color: #fff;
             background-color: var(--azulClaro);   
+            text-align: center;
         }
 
     .content-container .content .title {
