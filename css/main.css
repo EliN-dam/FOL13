@@ -26,7 +26,7 @@
 }
 
 body {
-    background-color: var(--grisClaro);
+    background-color: var(--grisUI);
 }
 
 html {
@@ -39,20 +39,17 @@ html {
 
 .content-container {
     position: relative;
+    padding: 1.875rem 0;
+    background: var(--grisClaro);
 }
 
     .content-container .bg-layer { 
         position: absolute;
-        top: -1.875rem; /* padding del slider */
+        top: 0;
         left: 0;
         width: 100%;
         background: var(--grisOscuroBG);      
-        z-index: -1;
     }
-
-        .content-container .bg-layer.night {  
-            height: 106.7%; /* 100% + los dos paddings del contenido */
-        }
 
         body.transitions-night-mode-on .content-container .bg-layer {
             /* Sólo aplica la transición cuando la página esta cargada. */

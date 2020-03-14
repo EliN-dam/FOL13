@@ -5,7 +5,7 @@
 .content-container .content {
     background: #fff;
     color: var(--grisLetra);
-    margin: 1.875rem auto;
+    margin: 0 auto;
     padding: 1.875rem;
     width: 90%;
     max-width: 80rem;

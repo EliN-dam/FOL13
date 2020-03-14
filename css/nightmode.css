@@ -1,5 +1,5 @@
 body.night .content-container .bg-layer {  
-    height: 106.7%; /* 100% + los dos paddings del contenido */
+    height: 100%;
 }
 
 body.night .content-container .content {

@@ -13,19 +13,40 @@
     to { transform: translateX(41rem); }
 }
 
+@keyframes cargarTitulo-P3 {
+    from { transform: translateX(0); }
+    to { transform: translateX(51rem); }
+}
+
 .drawDown {
     overflow: hidden;
     animation: DrawDown 1s ease .3s forwards;
 }
 
+    .drawDown.withPadding { /* Buscar alternativa */
+        animation: DrawDownWithPadding 1s ease .3s forwards;
+    }
+
 @keyframes DrawDown {
     from { 
         height: 0%;
-        opacity: .8;
+        opacity: .5;
     }
     to { 
         height: 100%;
         opacity: 1;
+    }
+}
+
+@keyframes DrawDownWithPadding  {
+    from { 
+        height: 0%;
+        opacity: .5;
+    }
+    to { 
+        height: 100%;
+        opacity: 1;
+        padding: .75rem;
     }
 }
 

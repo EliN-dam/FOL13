@@ -1,8 +1,0 @@
-header nav ul li:last-child a {
-    color: var(--naranja);
-    cursor: default;
-}
-
-.content-container .bg-layer { 
-    height: 30vh;
-}

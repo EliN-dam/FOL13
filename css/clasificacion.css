@@ -1,8 +1,71 @@
-header nav ul li:nth-child(3) a {
-    color: var(--naranja);
-    cursor: default;
+.content-container .content {
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "titulo  titulo  titulo"
+                         ".       .       ."
+                         "texto1  texto1  imagen1"
+                         "texto2  texto2  imagen1"
+                         "texto3  texto3  imagen1"
+                         "texto4  texto4  imagen1"
+                         "t1      t1      imagen1"
+                         "t2      t2      imagen1"
+                         "t3      t3      imagen1"
+                         "t4      t4      imagen1";
 }
 
-.content-container .bg-layer { 
-    height: 30vh;
-}
+    .content-container .content .image.one { 
+        grid-area: imagen1;
+        background: url("../images/adhy-savala-unsplash.jpg") no-repeat 35% center/cover;
+    }
+
+    .content-container .content .parrafo.one { grid-area: texto1; }
+    .content-container .content .parrafo.two { grid-area: texto2; }
+    .content-container .content .parrafo.three { grid-area: texto3; }
+    .content-container .content .parrafo.four { grid-area: texto4; }
+
+    .content-container .content .tarjeta {
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+        border-radius: .4rem;
+        color: var(--grisClaro);
+        /*padding: .75rem;*/
+        text-shadow: var(--sombraIconos);
+    }
+
+        .content-container .content .tarjeta.one {
+            grid-area: t1;
+            background: #ED213A;
+            background: -webkit-linear-gradient(to top, #93291E, #ED213A); 
+            background: linear-gradient(to top, #93291E, #ED213A);
+            border-color: var(--rojo);
+        }
+
+        .content-container .content .tarjeta.two {
+            grid-area: t2;
+            background: #F2994A;
+            background: -webkit-linear-gradient(to bottom, #F2C94C, #F2994A);
+            background: linear-gradient(to bottom, #F2C94C, #F2994A);
+            border-color: var(--naranja);
+        }
+
+        .content-container .content .tarjeta.three {
+            grid-area: t3;
+            background: #56ab2f;
+            background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);
+            background: linear-gradient(to bottom, #a8e063, #56ab2f);
+            border-color: #488f27;
+        }
+
+        .content-container .content .tarjeta.four {
+            grid-area: t4;
+            background: #212121;
+            background: -webkit-linear-gradient(to bottom, #434343, #212121);
+            background: linear-gradient(to bottom, #434343, #212121);
+            border-color: var(--grisUI);
+        }
+
+    .content-container .content .title {
+        width: 51rem;
+        left: -52.875rem;
+        animation: cargarTitulo-P3 .7s ease-in-out .3s forwards;
+    }
