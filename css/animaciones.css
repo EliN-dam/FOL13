@@ -1,10 +1,32 @@
-.fadeIn, .fadeIn.s05, .fadeIn.s1, .fadeIn.s1.r1, .slideUp, .zoomIn {
+.drawDown, .fadeIn, .fadeIn.s05, .fadeIn.s1, .fadeIn.s1.r1, 
+.slideUp, .zoomIn {
     opacity: 0;
 }
 
 @keyframes cargarTitulo-P1 {
     from { transform: translateX(0); }
     to { transform: translateX(58rem); }
+}
+
+@keyframes cargarTitulo-P2 {
+    from { transform: translateX(0); }
+    to { transform: translateX(41rem); }
+}
+
+.drawDown {
+    overflow: hidden;
+    animation: DrawDown 1s ease .3s forwards;
+}
+
+@keyframes DrawDown {
+    from { 
+        height: 0%;
+        opacity: .8;
+    }
+    to { 
+        height: 100%;
+        opacity: 1;
+    }
 }
 
 .fadeIn {

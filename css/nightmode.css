@@ -9,13 +9,22 @@ body.night .content-container .content {
 
     body.night .content-container .content .report button,
     body.night .content-container .content .subtitle,
-    body.night .content-container .overlay .popup .title
-      {
+    body.night .content-container .overlay .popup .title,
+    body.night .content-container .content .table table tr th  {
         color: var(--grisClaro);
     }
 
         body.night .content-container .content .report button:hover {
             color: var(--rojo);
+        }
+
+        body.night .content-container .content  .table table tr td,
+        body.night .content-container .content .table table tr th {
+            border-color: var(--azulOscuro);
+        }
+
+        body.night .content-container .content .table table tr th {
+            background-color: var(--azulOscuro);
         }
     
     body.night .content-container .overlay .popup .campos > select,

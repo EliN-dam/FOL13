@@ -1,0 +1,64 @@
+.content-container .content {   
+    grid-template-rows: repeat(16, auto);
+    grid-template-areas: "titulo  titulo  titulo"
+                         ".       .       ."
+                         "tabla1  tabla1  texto1"
+                         "tabla1  tabla1  texto2"
+                         "tabla1  tabla1  sub1"
+                         "tabla1  tabla1  imagen1"
+                         "tabla1  tabla1  imagen1"
+                         "texto3  texto3  imagen1"
+                         ".       .       ."
+                         "sub2    sub2    ."
+                         ".       .       ."
+                         "texto4  texto4  texto4"
+                         ".       .       ."
+                         "sub3    sub3    imagen2"
+                         ".       .       imagen2"
+                         "texto5  texto5  imagen2";   
+}
+
+    .content-container .content .image.one { 
+        grid-area: imagen1;
+        background: url("../images/soporte-vital-basico.png") no-repeat center center/contain;
+        box-shadow: none;
+    }
+
+    .content-container .content .image.two {
+        grid-area: imagen2;
+        background: url("../images/muerte-subita.jpg") no-repeat center center/cover;
+    }
+
+    .content-container .content .parrafo.one { grid-area: texto1; }
+    .content-container .content .parrafo.two { grid-area: texto2; }
+    .content-container .content .parrafo.three { grid-area: texto3; }
+    .content-container .content .parrafo.four { grid-area: texto4; }
+    .content-container .content .parrafo.five { grid-area: texto5; }
+    /*.content-container .content .parrafo.six { grid-area: texto6; }*/
+
+        .content-container .content .parrafo.three p,
+        .content-container .content .parrafo.four p,
+        .content-container .content .parrafo.five p { 
+            margin-bottom: .5rem;
+        }
+
+    .content-container .content .subtitle.one { 
+        grid-area: sub1; 
+        text-align: center;
+    }
+
+    .content-container .content .subtitle.two { grid-area: sub2; }
+    .content-container .content .subtitle.three { grid-area: sub3; }
+
+    .content-container .content .table.one { grid-area: tabla1; }
+   
+    .content-container .content .title {
+        width: 41rem;
+        left: -42.875rem;
+        animation: cargarTitulo-P2 .7s ease-in-out .3s forwards;
+    }
+
+/*      Night-mode      */
+body.night .content-container .content .image.one {
+    background: url("../images/soporte-vital-basico_night.png") no-repeat center center/contain;
+}

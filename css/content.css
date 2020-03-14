@@ -17,6 +17,7 @@
     overflow: hidden;
     position: relative;
     transition: all .5s ease-in-out;
+    text-align: justify;
 }
 
     .content-container .content .image { 
@@ -39,6 +40,14 @@
         transition: all 1s ease-in-out;
     }
     
+    .content-container .content .parrafo ol {
+        padding-left: 1rem;
+    }
+
+    .content-container .content .parrafo ul {
+        padding-left: 2rem;
+    }
+        
         .content-container .content .report button:hover {
             opacity: 1;
             transform: scale(1.2);
@@ -49,6 +58,27 @@
         transition: color 1s ease-in-out;
         color: var(--grisSubtitulos);
     }
+
+    .content-container .content .table table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        .content-container .content .table table tr td,
+        .content-container .content .table table tr th {
+            border: 1px solid;
+            border-color: var(--azulClaro);
+            padding: .5rem;
+        }
+
+            .content-container .content .table table tr td ul {
+                padding-left: 2rem;
+            }
+
+        .content-container .content .table table tr th {
+            color: #fff;
+            background-color: var(--azulClaro);   
+        }
 
     .content-container .content .title {
         background: var(--grisOscuroBG);
