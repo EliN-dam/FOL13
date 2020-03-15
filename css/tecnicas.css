@@ -1,0 +1,124 @@
+.content-container .content {
+    grid-template-rows: repeat(32, auto);
+    grid-template-areas: "titulo  titulo  titulo"
+                         ".       .       ."
+                         "sub1    sub1    ."
+                         ".       .       ."
+                         "texto1  texto1  texto1"
+                         "sub2    sub2    imagen1"
+                         "texto2  texto2  imagen1"
+                         "sub3    sub3    imagen1"
+                         "texto3  texto3  imagen1"
+                         ".       .       ."
+                         "sub4    sub4    ."
+                         ".       .       ."
+                         "texto4  texto4  tabla1"
+                         "texto5  texto5  tabla1"
+                         "texto6  texto6  tabla1"
+                         "texto7  texto7  imagen2"
+                         "texto8  texto8  imagen2"
+                         "texto9  texto9  imagen2"
+                         ".       .       ."
+                         "sub5    sub5    ."
+                         ".       .       ."
+                         "texto10 texto10 tabla2"
+                         "texto11 texto11 tabla2"
+                         "texto12 texto12 tabla2"
+                         "texto13 texto13 texto13"
+                         "texto14 texto14 texto14"
+                         ".       .       ."
+                         "imagen3 sub6    sub6"
+                         "imagen3 .       ."
+                         "imagen3 texto15 texto15"
+                         "imagen3 tabla3  tabla3"
+                         "imagen3 texto16 texto16";
+}
+    /* Night-mode */
+    body.night .content-container .content {
+        grid-template-areas: "titulo  titulo  titulo"
+                            ".       .       ."
+                            "sub1    sub1    ."
+                            ".       .       ."
+                            "texto1  texto1  texto1"
+                            "sub2    sub2    imagen1"
+                            "texto2  texto2  imagen1"
+                            "sub3    sub3    imagen1"
+                            "texto3  texto3  imagen1"
+                            ".       .       ."
+                            "sub4    sub4    ."
+                            ".       .       ."
+                            "texto4  texto4  tabla1"
+                            "texto5  texto5  tabla1"
+                            "texto6  texto6  tabla1"
+                            "texto7  texto7  imagen2"
+                            "texto8  texto8  imagen2"
+                            "texto9  texto9  imagen2"
+                            ".       .       ."
+                            "sub5    sub5    ."
+                            ".       .       ."
+                            "texto10 texto10 tabla2"
+                            "texto11 texto11 tabla2"
+                            "texto12 texto12 tabla2"
+                            "texto13 texto13 texto13"
+                            "texto14 texto14 texto14"
+                            ".       .       ."
+                            "sub6    sub6    imagen3"
+                            ".       .       imagen3"
+                            "texto15 texto15 imagen3"
+                            "tabla3  tabla3  imagen3"
+                            "texto16 texto16 texto16";
+    }
+
+    .content-container .content .image.one { 
+        grid-area: imagen1;
+        background: url("../images/24849.jpg") no-repeat center center/cover;
+    }
+
+    .content-container .content .image.two { 
+        grid-area: imagen2;
+        background: url("../images/max-larochelle-unsplash.jpg") no-repeat center 30%/cover;
+    }
+
+    .content-container .content .image.three { 
+        grid-area: imagen3;
+        background: url("../images/hand-trunk-leg-pxhere.com.jpg") no-repeat center center/cover;
+    }
+
+        /* Night-mode */
+        body.night .content-container .content .image.three {
+            background: url("../images/harlie-raethel-unsplash.jpg") no-repeat center center/contain;
+        }
+
+    .content-container .content .parrafo.one { grid-area: texto1; }
+    .content-container .content .parrafo.two { grid-area: texto2; }
+    .content-container .content .parrafo.three { grid-area: texto3; }
+    .content-container .content .parrafo.four { grid-area: texto4; }
+    .content-container .content .parrafo.five { grid-area: texto5; }
+    .content-container .content .parrafo.six { grid-area: texto6; }
+    .content-container .content .parrafo.seven { grid-area: texto7; }
+    .content-container .content .parrafo.eight { grid-area: texto8; }
+    .content-container .content .parrafo.nine { grid-area: texto9; }
+    .content-container .content .parrafo.ten { grid-area: texto10; }
+    .content-container .content .parrafo.eleven { grid-area: texto11; }
+    .content-container .content .parrafo.twelve { grid-area: texto12; }
+    .content-container .content .parrafo.thirteen { grid-area: texto13; }
+    .content-container .content .parrafo.fourteen { grid-area: texto14; }
+    .content-container .content .parrafo.fifteen { grid-area: texto15; }
+    .content-container .content .parrafo.sixteen { grid-area: texto16; }
+
+    .content-container .content .subtitle.one { grid-area: sub1; }
+    .content-container .content .subtitle.two { grid-area: sub2; }
+    .content-container .content .subtitle.three { grid-area: sub3; }
+    .content-container .content .subtitle.four { grid-area: sub4; }
+    .content-container .content .subtitle.five { grid-area: sub5; }
+    .content-container .content .subtitle.six { grid-area: sub6; }
+
+    .content-container .content .table.one { grid-area: tabla1; }
+    .content-container .content .table.two { grid-area: tabla2; }
+    .content-container .content .table.three { grid-area: tabla3; }
+
+    .content-container .content .title {
+        width: 59rem;
+        left: -60.875rem;
+        animation: cargarTitulo-P4 .7s ease-in-out .3s forwards;
+    }

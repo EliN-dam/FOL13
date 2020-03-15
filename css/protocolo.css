@@ -18,7 +18,7 @@
 
     .content-container .content .image.one { 
         grid-area: imagen1;
-        background: url("../images/andrei-slobtsov-unsplash.jpg") no-repeat center center/cover;
+        background: url("../images/daniela-santos-unsplash.jpg") no-repeat center center/cover;
     }
 
     .content-container .content .image.two {

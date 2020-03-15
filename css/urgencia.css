@@ -1,27 +1,51 @@
 .content-container .content {   
-    grid-template-rows: repeat(21, auto);
+    grid-template-rows: repeat(20, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."
                          "texto1  texto1  sub1"
-                         "texto2  texto2  imagen1"
                          "tabla1  tabla1  imagen1"
-                         "texto3  texto3  texto3"
+                         "texto2  texto2  texto2"
                          ".       .       ."
                          "sub2    sub2    ."
                          ".       .       ."
-                         "texto4  texto4  texto4"
-                         ".       .       ."
+                         "texto3  texto3  texto3"
+                         "imagen2 imagen2 imagen2"
                          "sub3    sub3    ."
                          ".       .       ."
-                         "texto5  texto5  imagen2"
+                         "texto4  texto4  texto4"
                          ".       .       ."
                          "sub4    sub4    ."
                          ".       .       ."
-                         "texto6  texto6  texto6"
+                         "texto5  texto5  texto5"
+                         "texto6  imagen3 imagen3"
                          "texto7  imagen3 imagen3"
-                         "texto8  imagen3 imagen3"
-                         "texto9  imagen3 imagen3";   
+                         "texto8  imagen3 imagen3";   
 }
+
+    /* Night-mode */
+    body.night .content-container .content {
+        grid-template-areas: "titulo  titulo  titulo"
+                         ".       .       ."
+                         "texto1  texto1  sub1"
+                         "tabla1  tabla1  imagen1"
+                         "texto2  texto2  texto2"
+                         ".       .       ."
+                         "sub2    sub2    ."
+                         ".       .       ."
+                         "texto3  texto3  texto3"
+                         ".       .       ."
+                         "sub3    sub3    ."
+                         ".       .       ."
+                         "texto4  texto4  imagen2"
+                         ".       .       ."
+                         "sub4    sub4    ."
+                         ".       .       ."
+                         "texto5  texto5  texto5"
+                         "texto6  imagen3 imagen3"
+                         "texto7  imagen3 imagen3"
+                         "texto8  imagen3 imagen3"; 
+    }
+
 
     .content-container .content .image.one { 
         grid-area: imagen1;
@@ -36,9 +60,17 @@
 
     .content-container .content .image.two {
         grid-area: imagen2;
-        /* ¿Cambiar imagen? */
-        background: url("../images/rescue-breathing.jpg") no-repeat center center/cover;
+        height: 5rem;
+        background: url("../images/pls-horizontal.png") no-repeat center center/contain;
+        box-shadow: none;
     }
+
+        /* Night-mode */
+        body.night .content-container .content .image.two {
+            height: auto;
+            background: url("../images/rescue-breathing.jpg") no-repeat center center/cover;
+            box-shadow: var(--sombraCajaPequeña);
+        }
 
     .content-container .content .image.three { 
         grid-area: imagen3;
@@ -53,9 +85,8 @@
     .content-container .content .parrafo.six { grid-area: texto6; }
     .content-container .content .parrafo.seven { grid-area: texto7; }
     .content-container .content .parrafo.eight { grid-area: texto8; }
-    .content-container .content .parrafo.nine { grid-area: texto9; }
 
-        .content-container .content .parrafo.six  ol > p {
+        .content-container .content .parrafo.five  ol > p {
             margin-top: .5rem;
             padding-left: -5rem;
         }
@@ -63,6 +94,7 @@
     .content-container .content .subtitle.one { 
         grid-area: sub1; 
         text-align: center;
+        align-self: center;
     }
 
     .content-container .content .subtitle.two { grid-area: sub2; }
