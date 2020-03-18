@@ -3,7 +3,7 @@ body.night .content-container .bg-layer {
 }
 
 body.night .content-container .content {
-    background: #272727;
+    background: var(--grisSubmenu);
     color: #C8C8C8;
 }
 

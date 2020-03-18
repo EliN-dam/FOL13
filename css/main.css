@@ -8,6 +8,7 @@
     --naranjaOscuro: #DF7A00;
     --grisUI: #212121;
     --grisSubtitulos: #292929;
+    --grisSubmenu: #272727;
     --grisOscuroBG: #2E2E2E;
     --grisLetra: #707070;
     --grisClaro: #E1E1E1;
@@ -66,4 +67,11 @@ html {
 
 .roboto {
     font-family: 'Roboto', sans-serif;
+}
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
 }
