@@ -1,0 +1,50 @@
+footer {
+    height: 11.428rem;
+}
+
+    footer:not(.index) .content  {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+        footer .content .head {
+            order: 2;
+        }
+
+            footer .content .head .logo {
+                display: none;
+            }
+
+        footer .content .nav {
+            width: 100%;
+            max-width: 54rem;
+        }
+
+            footer .content .nav .section {
+                margin-top: 1.3rem;
+            }
+
+                footer .content .nav .section ul {
+                    font-size: .7rem;
+                    line-height: 1.25rem;
+                    margin-top: .85rem;
+                }
+
+        footer:not(.index) .content .social {
+            margin-bottom: .5rem;
+        }
+
+    footer.index {
+        height: 2.142rem;
+        line-height: 2.142rem;
+    }
+
+        footer.index .content {
+            width: 60%;
+            max-width: 35rem;
+        }
+
+            footer.index .content .social .fab {
+                font-size: 1rem;
+            }

@@ -49,7 +49,7 @@ html {
         top: 0;
         left: 0;
         width: 100%;
-        background: var(--grisOscuroBG);      
+        background: var(--grisOscuroBG);  
     }
 
         body.transitions-night-mode-on .content-container .bg-layer {
