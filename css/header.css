@@ -149,3 +149,10 @@ header {
             header .menu.open .boton::after {
                 transform: rotate(-45deg) translate(-17.5px, -17.5px);
             } 
+
+@media screen and (max-width: 1250px) {
+    header nav {
+        width: 75%;
+        max-width: 48rem;
+    }
+}

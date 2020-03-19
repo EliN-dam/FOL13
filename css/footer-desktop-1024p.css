@@ -1,0 +1,31 @@
+footer:not(.index) .content  {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+    footer .content .head {
+        width: 40%;
+        max-width: 28rem;
+        flex-wrap: nowrap;
+        margin-left: 0;
+        order: 1;
+    }
+
+    footer .content .nav {
+        width: 95%;
+        max-width: 60.75rem;
+    }
+
+        footer .content .nav .section {
+            margin-top: 1.5rem;
+        }
+
+footer.index .content {
+    width: 75%;
+    max-width: 48rem;
+}
+
+footer .logo {
+    margin-bottom: 0;
+}

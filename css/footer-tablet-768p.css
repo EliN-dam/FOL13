@@ -2,35 +2,29 @@ footer {
     height: 11.428rem;
 }
 
-    footer:not(.index) .content  {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-around;
+    footer .content .head {
+        order: 2;
+        margin-left: 0;
     }
 
-        footer .content .head {
-            order: 2;
-            margin-left: 0;
+        footer .content .head .logo {
+            display: none;
         }
 
-            footer .content .head .logo {
-                display: none;
-            }
+    footer .content .nav {
+        width: 100%;
+        max-width: 54rem;
+    }
 
-        footer .content .nav {
-            width: 100%;
-            max-width: 54rem;
+        footer .content .nav .section {
+            margin-top: 1.3rem;
         }
 
-            footer .content .nav .section {
-                margin-top: 1.3rem;
+            footer .content .nav .section ul {
+                font-size: .7rem;
+                line-height: 1.25rem;
+                margin-top: .85rem;
             }
-
-                footer .content .nav .section ul {
-                    font-size: .7rem;
-                    line-height: 1.25rem;
-                    margin-top: .85rem;
-                }
 
         footer:not(.index) .content .social {
             margin-bottom: .5rem;

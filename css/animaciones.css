@@ -8,27 +8,6 @@
     to { transform: translateX(var(--Titulo)); }
 }
 
-/* eliminar */
-@keyframes cargarTitulo-P1 {
-    from { transform: translateX(0); }
-    to { transform: translateX(58rem); }
-}
-
-@keyframes cargarTitulo-P2 {
-    from { transform: translateX(0); }
-    to { transform: translateX(41rem); }
-}
-
-@keyframes cargarTitulo-P3 {
-    from { transform: translateX(0); }
-    to { transform: translateX(51rem); }
-}
-
-@keyframes cargarTitulo-P4 {
-    from { transform: translateX(0); }
-    to { transform: translateX(59rem); }
-}
-
 @keyframes showLinkLeft {
     from {
         opacity: 0;
@@ -50,7 +29,6 @@
         transform: translateY(0);
     }
 }
-
 
 .drawDown {
     overflow: hidden;
