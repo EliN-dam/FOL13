@@ -1,0 +1,65 @@
+header {
+    height: 3.4rem;
+}
+
+    header button {
+        font-size: .6rem;
+    }
+
+        header button span{
+            width: 1.3rem;
+            height: 1.3rem;
+            line-height: 1.3rem;            
+        }
+
+            header button.active::after {
+                transform: translateX(1.3rem);
+            }
+
+        header button::after {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+    
+    header nav {
+        width: 100%;
+        max-height: 0;
+        top: 3rem;
+        line-height: 3rem;
+        /*background: #272727E6;*/
+    }
+
+        header nav ul {
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+            header nav ul li{
+                margin-left: 2.25rem;
+                opacity: 0;
+            }
+
+                header nav ul li.current {
+                    display: none;
+                }
+
+                header nav ul li:last-child {
+                    margin-bottom: 1rem;
+                }
+
+    header nav.open {
+        max-height: 13rem;
+    }
+
+    header .menu {
+        width: 20px;
+        height: 15px;
+    }
+
+        header .menu .boton,
+        header .menu .boton::after,
+        header .menu .boton::before {
+            width: 20px;
+            height: 2px;
+        }
+

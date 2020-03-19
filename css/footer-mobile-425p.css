@@ -1,0 +1,27 @@
+footer, footer.index {
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+    footer .content,
+    footer.index .content {
+        width: 100%;
+    }
+
+        /*footer:not(.index) .content .copy {
+            display: block;
+        }*/
+
+        footer .content .nav,
+        footer .content .espacio {
+            display: none;
+        }
+
+        footer:not(.index) .content .social {
+            margin-bottom: 0;
+        }
+
+            footer .content .social .fab,
+            footer.index .content .social .fab {
+                font-size: .9rem;
+            }

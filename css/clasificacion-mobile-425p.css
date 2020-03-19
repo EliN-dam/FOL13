@@ -1,0 +1,25 @@
+.content-container .content {
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas: "titulo  titulo  titulo"
+                         ".       .       ."
+                         "texto1  texto1  texto1"
+                         "texto2  texto2  texto2"
+                         "imagen1 imagen1 imagen1"
+                         ".       .       ."
+                         "texto3  texto3  texto3"
+                         "texto4  texto4  texto4"
+                         "t1      t1      t1"
+                         "t2      t2      t2"
+                         "t3      t3      t3"
+                         "t4      t4      t4";
+}
+
+    .content-container .content .image.one { 
+        height: 13rem;
+    }
+
+    .content-container .content .title {
+        --Titulo: 26rem;
+        width: 26rem;
+        left: -27.875rem;
+    }

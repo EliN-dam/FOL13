@@ -1,0 +1,18 @@
+.content-container .slider {
+    width: 90%;
+    max-width: 31.875rem;
+}
+
+    .content-container .slider .images .slide .title {
+        width: 27rem;
+        right: -27rem;
+        padding: 1rem;
+    }
+
+        .content-container .slider .images .slide.current .title {
+            transform: translateX(-27rem);
+        }
+
+        .content-container .slider .images .slide .title h1 {
+            font-size: 1.8rem;
+        }      

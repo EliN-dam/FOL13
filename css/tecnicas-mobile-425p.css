@@ -1,0 +1,94 @@
+.content-container .content {
+    grid-template-rows: repeat(39, auto);
+    grid-template-areas: "titulo  titulo  titulo"
+                         ".       .       ."
+                         "sub1    sub1    ."
+                         ".       .       ."
+                         "texto1  texto1  texto1"
+                         "sub2    sub2    ."
+                         "texto2  texto2  texto2"
+                         "sub3    sub3    sub3"
+                         "texto3  texto3  texto3"
+                         "imagen1 imagen1 imagen1"
+                         ".       .       ."
+                         "sub4    sub4    ."
+                         ".       .       ."
+                         "texto4  texto4  texto4"
+                         "texto5  texto5  texto5"
+                         "texto6  texto6  texto6"
+                         ".       .       ."
+                         "tabla1  tabla1  tabla1"
+                         ".       .       ."
+                         "texto7  texto7  texto7"
+                         "texto8  texto8  texto8"
+                         "texto9  texto9  texto9"
+                         "imagen2 imagen2 imagen2"
+                         ".       .       ."
+                         "sub5    sub5    ."
+                         ".       .       ."
+                         "texto10 texto10 texto10"
+                         "texto11 texto11 texto11"
+                         "texto12 texto12 texto12"
+                         "texto13 texto13 texto13"
+                         "tabla2  tabla2  tabla2"
+                         "texto14 texto14 texto14"
+                         ".       .       ."
+                         "sub6    sub6    ."
+                         ".       .       ."
+                         "texto15 texto15 texto15"
+                         "tabla3  tabla3  tabla3"
+                         "texto16 texto16 texto16"
+                         "imagen3 imagen3 imagen3";
+}
+    /* Night-mode */
+    body.night .content-container .content {
+        grid-template-areas: "titulo  titulo  titulo"
+                             ".       .       ."
+                             "sub1    sub1    ."
+                             ".       .       ."
+                             "texto1  texto1  texto1"
+                             "sub2    sub2    ."
+                             "texto2  texto2  texto2"
+                             "sub3    sub3    sub3"
+                             "texto3  texto3  texto3"
+                             "imagen1 imagen1 imagen1"
+                             ".       .       ."
+                             "sub4    sub4    ."
+                             ".       .       ."
+                             "texto4  texto4  texto4"
+                             "texto5  texto5  texto5"
+                             "texto6  texto6  texto6"
+                             ".       .       ."
+                             "tabla1  tabla1  tabla1"
+                             ".       .       ."
+                             "texto7  texto7  texto7"
+                             "texto8  texto8  texto8"
+                             "texto9  texto9  texto9"
+                             "imagen2 imagen2 imagen2"
+                             ".       .       ."
+                             "sub5    sub5    ."
+                             ".       .       ."
+                             "texto10 texto10 texto10"
+                             "texto11 texto11 texto11"
+                             "texto12 texto12 texto12"
+                             "texto13 texto13 texto13"
+                             "tabla2  tabla2  tabla2"
+                             "texto14 texto14 texto14"
+                             ".       .       ."
+                             "sub6    sub6    ."
+                             ".       .       ."
+                             "texto15 texto15 texto15"
+                             "tabla3  tabla3  tabla3"
+                             "imagen3 imagen3 imagen3"
+                             "texto16 texto16 texto16";
+    }
+
+    .content-container .content .image.two { 
+        height: 13rem;
+    }
+
+    .content-container .content .title {
+        --Titulo: 27rem;
+        width: 27rem;
+        left: -28.875rem;
+    }

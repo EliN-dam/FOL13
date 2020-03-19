@@ -18,6 +18,10 @@ footer {
         height: inherit;
     }
 
+        /*footer:not(.index) .content .copy {
+            display: none;
+        }*/
+
         footer .content .head {
             display: flex;
             flex-wrap: wrap;

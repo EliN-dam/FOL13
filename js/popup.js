@@ -1,12 +1,12 @@
-var reportar = document.getElementById('report'),
-    cerrar = document.getElementById('cerrar')
-    overlay = document.getElementById('overlay'),
-    popup = document.getElementById('popup'),
-    campos = document.getElementById('campos')
-    titulo = document.getElementById('titulo'),
-    desplegable = document.getElementById('seccion');
+const reportar = document.getElementById('report'),
+      cerrar = document.getElementById('cerrar')
+      overlay = document.getElementById('overlay'),
+      popup = document.getElementById('popup'),
+      campos = document.getElementById('campos')
+      titulo = document.getElementById('titulo'),
+      desplegable = document.getElementById('seccion');
 
-/*var test = window.location.pathname.split('/').pop().split('.')[0];
+/*let test = window.location.pathname.split('/').pop().split('.')[0];
 console.log(test);*/
 
 report.addEventListener('click', function() {

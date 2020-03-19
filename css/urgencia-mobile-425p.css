@@ -1,0 +1,74 @@
+.content-container .content {   
+    grid-template-rows: repeat(25, auto);
+    grid-template-areas: "titulo  titulo  titulo"
+                         ".       .       ."
+                         "texto1  texto1  texto1"
+                         "sub1    sub1    sub1"
+                         "imagen1 imagen1 imagen1"
+                         ".       .       ."
+                         "tabla1  tabla1  tabla1"
+                         "texto2  texto2  texto2"
+                         ".       .       ."
+                         "sub2    sub2    ."
+                         ".       .       ."
+                         "texto3  texto3  texto3"
+                         "imagen2 imagen2 imagen2"
+                         ".       .       ."
+                         "sub3    sub3    ."
+                         ".       .       ."
+                         "texto4  texto4  texto4"
+                         ".       .       ."
+                         "sub4    sub4    ."
+                         ".       .       ."
+                         "texto5  texto5  texto5"
+                         "imagen3 imagen3 imagen3"
+                         "texto6  texto6  texto6"
+                         "texto7  texto7  texto7"
+                         "texto8  texto8  texto8";   
+}
+
+    /* Night-mode */
+    body.night .content-container .content {
+        grid-template-areas: "titulo  titulo  titulo"
+                             ".       .       ."
+                             "texto1  texto1  texto1"
+                             "sub1    sub1    sub1"
+                             "imagen1 imagen1 imagen1"
+                             ".       .       ."
+                             "tabla1  tabla1  tabla1"
+                             "texto2  texto2  texto2"
+                             ".       .       ."
+                             "sub2    sub2    ."
+                             ".       .       ."
+                             "texto3  texto3  texto3"
+                             ".       .       ."
+                             "sub3    sub3    ."
+                             ".       .       ."
+                             "texto4  texto4  texto4"
+                             "imagen2 imagen2 imagen2"
+                             ".       .       ."
+                             "sub4    sub4    ."
+                             ".       .       ."
+                             "texto5  texto5  texto5"
+                             "imagen3 imagen3 imagen3"
+                             "texto6  texto6  texto6"
+                             "texto7  texto7  texto7"
+                             "texto8  texto8  texto8"; 
+    }
+
+    .content-container .content .image.one { 
+        height: 20rem;
+    }
+
+    .content-container .content .image.two {
+        grid-area: imagen2;
+        height: 25em;
+        background: url("../images/pls.jpg") no-repeat center center/contain;
+
+    }
+
+    .content-container .content .title {
+        --Titulo: 26rem;
+        width: 26rem;
+        left: -27.875rem;
+    }
