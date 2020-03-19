@@ -41,7 +41,7 @@
     .content-container .content .subtitle.two { grid-area: sub2; }
 
     .content-container .content .title {
+        --Titulo: 58rem;
         width: 58rem;
         left: -59.875rem;
-        animation: cargarTitulo-P1 .7s ease-in-out .3s forwards;
     }

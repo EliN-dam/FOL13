@@ -65,7 +65,7 @@
         }
 
     .content-container .content .title {
+        --Titulo: 51rem;
         width: 51rem;
         left: -52.875rem;
-        animation: cargarTitulo-P3 .7s ease-in-out .3s forwards;
     }

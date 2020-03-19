@@ -1,0 +1,14 @@
+.content-container .content {
+    padding: 1.5rem;
+    width: 92%;
+    row-gap: .8rem;
+}
+
+    .content-container .content .title {
+        padding: 1.25rem;
+        font-size: 1rem;
+    }
+
+.content-container .overlay .popup {
+    width: 35rem;
+}

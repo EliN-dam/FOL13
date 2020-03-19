@@ -25,25 +25,25 @@
     /* Night-mode */
     body.night .content-container .content {
         grid-template-areas: "titulo  titulo  titulo"
-                         ".       .       ."
-                         "texto1  texto1  sub1"
-                         "tabla1  tabla1  imagen1"
-                         "texto2  texto2  texto2"
-                         ".       .       ."
-                         "sub2    sub2    ."
-                         ".       .       ."
-                         "texto3  texto3  texto3"
-                         ".       .       ."
-                         "sub3    sub3    ."
-                         ".       .       ."
-                         "texto4  texto4  imagen2"
-                         ".       .       ."
-                         "sub4    sub4    ."
-                         ".       .       ."
-                         "texto5  texto5  texto5"
-                         "texto6  imagen3 imagen3"
-                         "texto7  imagen3 imagen3"
-                         "texto8  imagen3 imagen3"; 
+                             ".       .       ."
+                             "texto1  texto1  sub1"
+                             "tabla1  tabla1  imagen1"
+                             "texto2  texto2  texto2"
+                             ".       .       ."
+                             "sub2    sub2    ."
+                             ".       .       ."
+                             "texto3  texto3  texto3"
+                             ".       .       ."
+                             "sub3    sub3    ."
+                             ".       .       ."
+                             "texto4  texto4  imagen2"
+                             ".       .       ."
+                             "sub4    sub4    ."
+                             ".       .       ."
+                             "texto5  texto5  texto5"
+                             "texto6  imagen3 imagen3"
+                             "texto7  imagen3 imagen3"
+                             "texto8  imagen3 imagen3"; 
     }
 
 
@@ -104,7 +104,7 @@
     .content-container .content .table.one { grid-area: tabla1; }
    
     .content-container .content .title {
+        --Titulo: 41rem;
         width: 41rem;
         left: -42.875rem;
-        animation: cargarTitulo-P2 .7s ease-in-out .3s forwards;
     }
