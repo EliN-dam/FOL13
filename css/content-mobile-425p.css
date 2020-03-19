@@ -17,3 +17,15 @@
         font-size: 1.25rem;
         line-height: 1.25rem;
     }
+
+@media screen and (max-width: 375px) {
+    .content-container .content .title {
+        font-size: .9rem;
+    }
+
+    .content-container .content .report button {
+        top: .5rem;
+        right: .5rem;
+        font-size: 2rem;
+    }
+}

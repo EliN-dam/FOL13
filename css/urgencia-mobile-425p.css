@@ -70,5 +70,13 @@
     .content-container .content .title {
         --Titulo: 26rem;
         width: 26rem;
-        left: -27.875rem;
+        left: -27.25rem;
     }
+
+@media screen and (max-width: 375px) {
+    .content-container .content .title {
+        --Titulo: 25rem;
+        width: 25rem;
+        left: -26.25rem;
+    }
+}
