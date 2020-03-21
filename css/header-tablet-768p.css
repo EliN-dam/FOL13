@@ -1,5 +1,7 @@
 header {
     height: 3.571rem;
+    -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -15,7 +17,9 @@ header {
         }
 
             header button.active::after {
-                transform: translateX(1.5rem);
+                -webkit-transform: translateX(1.5rem);
+                    -ms-transform: translateX(1.5rem);
+                        transform: translateX(1.5rem);
             }
     
     header button::after {
@@ -25,18 +29,22 @@ header {
 
     header nav {
         width: 100%;
+        max-width: 55rem;
         max-height: 0;
         line-height: 3rem;
         position: absolute;
-        top: 3rem;
+        top: 3.571rem;
         z-index: 1;
         background: var(--grisSubmenu);
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
         transition: all .5s ease;
         overflow-x: hidden;
     }
 
         header nav ul {
-            justify-content: space-around;;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
         }
 
             header nav ul li{
@@ -44,15 +52,16 @@ header {
             }
 
     header nav.open {
-        max-height: 3rem;
+        max-height: 3.571rem;
     }
-
 
     header .logo {
         font-size: 2rem;
     }
 
     header .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-left: 2rem;
     }

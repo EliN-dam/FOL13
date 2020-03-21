@@ -3,6 +3,8 @@ footer {
 }
 
     footer .content .head {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
         margin-left: 0;
     }

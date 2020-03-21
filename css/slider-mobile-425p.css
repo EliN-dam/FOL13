@@ -10,7 +10,9 @@
     }
 
         .content-container .slider .images .slide.current .title {
-            transform: translateX(-27rem);
+            -webkit-transform: translateX(-27rem);
+                -ms-transform: translateX(-27rem);
+                    transform: translateX(-27rem);
         }
 
         .content-container .slider .images .slide .title h1 {

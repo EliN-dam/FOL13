@@ -1,4 +1,5 @@
-.content-container .content {   
+.content-container .content {
+    -ms-grid-rows: repeat(20, auto); 
     grid-template-rows: repeat(20, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."
@@ -47,10 +48,13 @@
     }
 
 
-    .content-container .content .image.one { 
+    .content-container .content .image.one {
+        -ms-grid-row: 4; 
+        -ms-grid-column: 3; 
         grid-area: imagen1;
         background: url("../images/soporte-vital-basico.png") no-repeat center center/contain;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
     }
 
         /* Night-mode */
@@ -59,32 +63,84 @@
         }
 
     .content-container .content .image.two {
+        -ms-grid-row: 10;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
         grid-area: imagen2;
         height: 5rem;
         background: url("../images/pls-horizontal.png") no-repeat center center/contain;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
     }
 
         /* Night-mode */
         body.night .content-container .content .image.two {
             height: auto;
             background: url("../images/rescue-breathing.jpg") no-repeat center center/cover;
-            box-shadow: var(--sombraCajaPequeña);
+            -webkit-box-shadow: var(--sombraCajaPequenia);
+                    box-shadow: var(--sombraCajaPequenia);
         }
 
-    .content-container .content .image.three { 
+    .content-container .content .image.three {
+        -ms-grid-row: 18; 
+        -ms-grid-row-span: 3; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
         grid-area: imagen3;
         background: url("../images/71212.jpg") no-repeat center center/cover;
     }
 
-    .content-container .content .parrafo.one { grid-area: texto1; }
-    .content-container .content .parrafo.two { grid-area: texto2; }
-    .content-container .content .parrafo.three { grid-area: texto3; }
-    .content-container .content .parrafo.four { grid-area: texto4; }
-    .content-container .content .parrafo.five { grid-area: texto5; }
-    .content-container .content .parrafo.six { grid-area: texto6; }
-    .content-container .content .parrafo.seven { grid-area: texto7; }
-    .content-container .content .parrafo.eight { grid-area: texto8; }
+    .content-container .content .parrafo.one { 
+        -ms-grid-row: 3; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto1; 
+    }
+
+    .content-container .content .parrafo.two { 
+        -ms-grid-row: 5; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3;
+        grid-area: texto2; 
+    }
+
+    .content-container .content .parrafo.three { 
+        -ms-grid-row: 9; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3;
+        grid-area: texto3; }
+
+    .content-container .content .parrafo.four { 
+        -ms-grid-row: 13; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3;
+        grid-area: texto4; 
+    }
+
+    .content-container .content .parrafo.five { 
+        -ms-grid-row: 17; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3;
+        grid-area: texto5; 
+    }
+
+    .content-container .content .parrafo.six { 
+        -ms-grid-row: 18; 
+        -ms-grid-column: 1;
+        grid-area: texto6; 
+    }
+
+    .content-container .content .parrafo.seven { 
+        ms-grid-row: 19; 
+        -ms-grid-column: 1;
+        grid-area: texto7; 
+    }
+
+    .content-container .content .parrafo.eight { 
+        -ms-grid-row: 20; 
+        -ms-grid-column: 1;
+        grid-area: texto8; 
+    }
 
         .content-container .content .parrafo.five  ol > p {
             margin-top: .5rem;
@@ -92,16 +148,41 @@
         }
 
     .content-container .content .subtitle.one { 
+        -ms-grid-row: 3; 
+        -ms-grid-column: 3; 
         grid-area: sub1; 
         text-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
     }
 
-    .content-container .content .subtitle.two { grid-area: sub2; }
-    .content-container .content .subtitle.three { grid-area: sub3; }
-    .content-container .content .subtitle.four { grid-area: sub4; }
+    .content-container .content .subtitle.two { 
+        -ms-grid-row: 7; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub2; 
+    }
 
-    .content-container .content .table.one { grid-area: tabla1; }
+    .content-container .content .subtitle.three { 
+        -ms-grid-row: 11; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub3; 
+    }
+
+    .content-container .content .subtitle.four { 
+        -ms-grid-row: 15; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub4; 
+    }
+
+    .content-container .content .table.one { 
+        -ms-grid-row: 4; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: tabla1; 
+    }
    
     .content-container .content .title {
         --Titulo: 41rem;

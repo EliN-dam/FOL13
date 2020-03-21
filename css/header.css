@@ -1,9 +1,14 @@
 header {
     background: var(--grisUI);
     color: var(--grisClaro);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
-    align-items: center;
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
     height: 4.375rem;
     width: 100%;
 }
@@ -11,17 +16,23 @@ header {
     header a {
         text-decoration: none;
         color: inherit;
+        -webkit-transition: color .5s ease-in-out;
+        -o-transition: color .5s ease-in-out;
         transition: color .5s ease-in-out;
     }
 
     header button {
         cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background: var(--azulOscuro);
         border: none;
         outline: none;
         border-radius: 62.5rem;
         position: relative;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
         transition: all 1s ease;
         text-shadow: var(--sombraIconos);
     }
@@ -40,7 +51,9 @@ header {
         }
 
             header button.active::after {
-                transform: translateX(2rem);
+                -webkit-transform: translateX(2rem);
+                    -ms-transform: translateX(2rem);
+                        transform: translateX(2rem);
                 left: unset;
             }
         
@@ -54,21 +67,30 @@ header {
         left: 0;
         right: unset;
         border-radius: 50%;
-        box-shadow: 0 0 2px 2px #00000033;
+        -webkit-box-shadow: 0 0 2px 2px #00000033;
+                box-shadow: 0 0 2px 2px #00000033;
     }
 
         body.transitions-night-mode-on header button::after {
             /* Sólo aplica la transición cuando la página esta cargada. */
+            -webkit-transition: -webkit-transform .5s ease;
+            transition: -webkit-transform .5s ease;
+            -o-transition: transform .5s ease;
             transition: transform .5s ease;
+            transition: transform .5s ease, -webkit-transform .5s ease;
         }
 
     header nav {
-        max-width: 55rem;
         width: 60%;
+        max-width: 55rem;
     }
 
         header nav ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+               -ms-flex-pack: justify;
             justify-content: space-between;
         }
 
@@ -93,6 +115,8 @@ header {
 
         header .logo span {
             color: var(--azulClaro);
+            -webkit-transition: color .5s ease-in-out;
+            -o-transition: color .5s ease-in-out;
             transition: color .5s ease-in-out;
         }
 
@@ -109,8 +133,12 @@ header {
         width: 25px;
         height: 20px;
         display: none;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+           -ms-flex-pack: center;
+         justify-content: center;
+         -webkit-box-align: center;
+            -ms-flex-align: center;
+               align-items: center;
     }
 
         header .menu .boton,
@@ -119,6 +147,8 @@ header {
             width: 25px;
             height: 3px;
             border-radius: 5px;
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
             background: var(--grisClaro);
         }
@@ -130,24 +160,34 @@ header {
         }
 
         header .menu .boton::after {
-            transform: translateY(-8px);
+            -webkit-transform: translateY(-8px);
+                -ms-transform: translateY(-8px);
+                    transform: translateY(-8px);
         }
 
         header .menu .boton::before  {
-            transform: translateY(8px);
+            -webkit-transform: translateY(8px);
+                -ms-transform: translateY(8px);
+                    transform: translateY(8px);
         }
 
             header .menu.open .boton {
-                transform: translateX(25px);
+                -webkit-transform: translateX(25px);
+                    -ms-transform: translateX(25px);
+                        transform: translateX(25px);
                 background: transparent;
             }
 
             header .menu.open .boton::before {
-                transform: rotate(45deg) translate(-17.5px, 17.5px);
+                -webkit-transform: rotate(45deg) translate(-17.5px, 17.5px);
+                    -ms-transform: rotate(45deg) translate(-17.5px, 17.5px);
+                        transform: rotate(45deg) translate(-17.5px, 17.5px);
             }
 
             header .menu.open .boton::after {
-                transform: rotate(-45deg) translate(-17.5px, -17.5px);
+                -webkit-transform: rotate(-45deg) translate(-17.5px, -17.5px);
+                    -ms-transform: rotate(-45deg) translate(-17.5px, -17.5px);
+                        transform: rotate(-45deg) translate(-17.5px, -17.5px)
             } 
 
 @media screen and (max-width: 1250px) {

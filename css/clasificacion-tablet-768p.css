@@ -1,4 +1,5 @@
 .content-container .content {
+    -ms-grid-rows: repeat(10, auto);
     grid-template-rows: repeat(10, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."

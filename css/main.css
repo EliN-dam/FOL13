@@ -1,3 +1,5 @@
+/* https://autoprefixer.github.io/ */
+
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap');
 
 :root {
@@ -17,7 +19,7 @@
     /* Sombras */
     --sombraIconos: 1px 1px 2px #212121;
     --sombraCajas: 0 2px 4px #212121B3;
-    --sombraCajaPequeña: 0 1px 3px #21212166;
+    --sombraCajaPequenia: 0 1px 3px #21212166;
 
     /* Tamaños */
     --Titulo: 0;
@@ -26,7 +28,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -57,6 +60,8 @@ html {
 
         body.transitions-night-mode-on .content-container .bg-layer {
             /* Sólo aplica la transición cuando la página esta cargada. */
+            -webkit-transition: height .5s linear;
+            -o-transition: height .5s linear;
             transition: height .5s linear;
         }
     
@@ -81,5 +86,9 @@ html {
 @media screen and (max-width: 425px) {
     html {
         font-size: 12px;
+    }
+
+    .content-container:not(.index) {
+        padding: 0;
     }
 }

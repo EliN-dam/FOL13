@@ -1,4 +1,5 @@
 .content-container .content {
+    -ms-grid-rows: repeat(12, auto);
     grid-template-rows: repeat(12, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."
@@ -19,9 +20,9 @@
     }
 
     .content-container .content .title {
-        --Titulo: 26rem;
-        width: 26rem;
-        left: -27.25rem;
+        --Titulo: 30.5rem;
+        width: 30.5rem;
+        left: -31.75rem;
     }
 
 @media screen and (max-width: 375px) {

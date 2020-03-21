@@ -9,19 +9,27 @@
     padding: 1.875rem;
     width: 90%;
     max-width: 80rem;
-    box-shadow: var(--sombraCajas);
+    -webkit-box-shadow: var(--sombraCajas);
+            box-shadow: var(--sombraCajas);
+    display: -ms-grid;
     display: grid;
     row-gap: .9rem;
-    column-gap: 1.875rem;
+    -webkit-column-gap: 1.875rem;
+       -moz-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+    -ms-grid-columns: 1fr 1.875rem 1fr 1.875rem 1fr;
     grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
     position: relative;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
     text-align: justify;
 }
 
     .content-container .content .image { 
-        box-shadow: var(--sombraCajaPequeña);
+        -webkit-box-shadow: var(--sombraCajaPequenia); 
+                box-shadow: var(--sombraCajaPequenia);
     }
 
    
@@ -49,17 +57,25 @@
         border: none;
         outline: none;
         opacity: .8;
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
         transform: scale(.9);
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
     }
 
         .content-container .content .report button:hover {
             opacity: 1;
-            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                    transform: scale(1.2);
             color: var(--rojo);
         }
 
     .content-container .content .subtitle {
+        -webkit-transition: color 1s ease-in-out;
+        -o-transition: color 1s ease-in-out;
         transition: color 1s ease-in-out;
         color: var(--grisSubtitulos);
     }
@@ -94,9 +110,12 @@
         position: relative;
         font-size: 1.2rem;
         text-align: left;
+        -webkit-transition: background-color .5s ease-in-out;
+        -o-transition: background-color .5s ease-in-out;
         transition: background-color .5s ease-in-out;
         grid-area: titulo;
-        animation: cargarTitulo .7s ease-in-out .3s forwards
+        -webkit-animation: cargarTitulo .7s ease-in-out .3s forwards;
+                animation: cargarTitulo .7s ease-in-out .3s forwards
     }
     
 .content-container .overlay {
@@ -106,9 +125,15 @@
     bottom: 0;
     left: 0;
     right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     visibility: hidden;
 }
 
@@ -118,23 +143,33 @@
 
     .content-container .overlay .popup {
         background: var(--grisClaro);
-        box-shadow: var(--sombraCajas);
+        -webkit-box-shadow: var(--sombraCajas);
+                box-shadow: var(--sombraCajas);
         width: 36rem;
         padding: 2rem;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
         transition: all .3s ease;
         opacity: 0;
-        transform: scale(.7);
+        -webkit-transform: scale(.7);
+            -ms-transform: scale(.7);
+                transform: scale(.7);
         position: relative;
         overflow: hidden;
     }
 
         .content-container .overlay .popup.active {
             opacity: 1;
-            transform: scale(1);
+            -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                    transform: scale(1);
         }
 
         .content-container .overlay .popup .botones {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -ms-flex-pack: distribute;
             justify-content: space-around;
         }
 
@@ -145,6 +180,8 @@
                 color: #FFF;
                 font-size: 1.125rem;
                 padding: 0.5625rem 2rem;
+                -webkit-transition: background-color .5s ease-in-out;
+                -o-transition: background-color .5s ease-in-out;
                 transition: background-color .5s ease-in-out;
             }
 
@@ -175,6 +212,8 @@
             right: 0.9375rem;
             background: transparent;
             color: var(--grisLetra);
+            -webkit-transition: color .5s ease-in-out;
+            -o-transition: color .5s ease-in-out;
             transition: color .5s ease-in-out;
         } 
 
@@ -183,13 +222,19 @@
             }
 
         .content-container .overlay .popup form .campos {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
         }
 
             .content-container .overlay .popup .campos > select,
             .content-container .overlay .popup .campos > textarea {
+                -ms-flex-preferred-size: 100%;
                 flex-basis: 100%;
                 margin-bottom: 1.5625rem;
                 font-size: 1rem;

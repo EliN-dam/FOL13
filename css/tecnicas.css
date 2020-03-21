@@ -1,4 +1,5 @@
 .content-container .content {
+    -ms-grid-rows: repeat(32, auto);
     grid-template-rows: repeat(32, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."
@@ -69,17 +70,26 @@
                              "texto16 texto16 texto16";
     }
 
-    .content-container .content .image.one { 
+    .content-container .content .image.one {
+        -ms-grid-row: 6; 
+        -ms-grid-row-span: 4; 
+        -ms-grid-column: 3;
         grid-area: imagen1;
         background: url("../images/24849.jpg") no-repeat center center/cover;
     }
 
-    .content-container .content .image.two { 
+    .content-container .content .image.two {
+        -ms-grid-row: 16; 
+        -ms-grid-row-span: 3; 
+        -ms-grid-column: 3;
         grid-area: imagen2;
         background: url("../images/max-larochelle-unsplash.jpg") no-repeat center 30%/cover;
     }
 
-    .content-container .content .image.three { 
+    .content-container .content .image.three {
+        -ms-grid-row: 28; 
+        -ms-grid-row-span: 5; 
+        -ms-grid-column: 1;
         grid-area: imagen3;
         background: url("../images/hand-trunk-leg-pxhere.com.jpg") no-repeat center center/cover;
     }
@@ -89,33 +99,180 @@
             background: url("../images/harlie-raethel-unsplash.jpg") no-repeat center center/contain;
         }
 
-    .content-container .content .parrafo.one { grid-area: texto1; }
-    .content-container .content .parrafo.two { grid-area: texto2; }
-    .content-container .content .parrafo.three { grid-area: texto3; }
-    .content-container .content .parrafo.four { grid-area: texto4; }
-    .content-container .content .parrafo.five { grid-area: texto5; }
-    .content-container .content .parrafo.six { grid-area: texto6; }
-    .content-container .content .parrafo.seven { grid-area: texto7; }
-    .content-container .content .parrafo.eight { grid-area: texto8; }
-    .content-container .content .parrafo.nine { grid-area: texto9; }
-    .content-container .content .parrafo.ten { grid-area: texto10; }
-    .content-container .content .parrafo.eleven { grid-area: texto11; }
-    .content-container .content .parrafo.twelve { grid-area: texto12; }
-    .content-container .content .parrafo.thirteen { grid-area: texto13; }
-    .content-container .content .parrafo.fourteen { grid-area: texto14; }
-    .content-container .content .parrafo.fifteen { grid-area: texto15; }
-    .content-container .content .parrafo.sixteen { grid-area: texto16; }
+    .content-container .content .parrafo.one { 
+        -ms-grid-row: 5; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3;
+        grid-area: texto1; 
+    }
 
-    .content-container .content .subtitle.one { grid-area: sub1; }
-    .content-container .content .subtitle.two { grid-area: sub2; }
-    .content-container .content .subtitle.three { grid-area: sub3; }
-    .content-container .content .subtitle.four { grid-area: sub4; }
-    .content-container .content .subtitle.five { grid-area: sub5; }
-    .content-container .content .subtitle.six { grid-area: sub6; }
+    .content-container .content .parrafo.two { 
+        -ms-grid-row: 7; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto2; 
+    }
 
-    .content-container .content .table.one { grid-area: tabla1; }
-    .content-container .content .table.two { grid-area: tabla2; }
-    .content-container .content .table.three { grid-area: tabla3; }
+    .content-container .content .parrafo.three { 
+        -ms-grid-row: 9; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto3; 
+    }
+
+    .content-container .content .parrafo.four { 
+        -ms-grid-row: 13; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto4; 
+    }
+
+    .content-container .content .parrafo.five { 
+        -ms-grid-row: 14; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto5; 
+    }
+
+    .content-container .content .parrafo.six { 
+        -ms-grid-row: 15; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto6; 
+    }
+
+    .content-container .content .parrafo.seven { 
+        -ms-grid-row: 16; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto7; 
+    }
+
+    .content-container .content .parrafo.eight { 
+        -ms-grid-row: 17; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto8; 
+    }
+
+    .content-container .content .parrafo.nine { 
+        -ms-grid-row: 18; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto9; 
+    }
+
+    .content-container .content .parrafo.ten { 
+        -ms-grid-row: 22; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto10; 
+    }
+
+    .content-container .content .parrafo.eleven { 
+        -ms-grid-row: 23; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto11; 
+    }
+
+    .content-container .content .parrafo.twelve { 
+        -ms-grid-row: 24; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto12; 
+    }
+
+    .content-container .content .parrafo.thirteen { 
+        -ms-grid-row: 25; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3;
+        grid-area: texto13; 
+    }
+
+    .content-container .content .parrafo.fourteen { 
+        -ms-grid-row: 26; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 3;
+        grid-area: texto14; 
+    }
+
+    .content-container .content .parrafo.fifteen { 
+        -ms-grid-row: 30; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
+        grid-area: texto15; 
+    }
+
+    .content-container .content .parrafo.sixteen { 
+        -ms-grid-row: 32; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
+        grid-area: texto16; 
+    }
+    
+    .content-container .content .subtitle.one { 
+        -ms-grid-row: 3; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub1; 
+    }
+
+    .content-container .content .subtitle.two { 
+        -ms-grid-row: 6; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub2; 
+    }
+
+    .content-container .content .subtitle.three { 
+        -ms-grid-row: 8; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub3; 
+    }
+
+    .content-container .content .subtitle.four { 
+        -ms-grid-row: 11; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub4; 
+    }
+
+    .content-container .content .subtitle.five { 
+        -ms-grid-row: 20; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub5; 
+    }
+
+    .content-container .content .subtitle.six { 
+        -ms-grid-row: 28; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
+        grid-area: sub6; 
+    }
+
+    .content-container .content .table.one { 
+        -ms-grid-row: 13; 
+        -ms-grid-row-span: 3; 
+        -ms-grid-column: 3;
+        grid-area: tabla1; 
+    }
+
+    .content-container .content .table.two { 
+        -ms-grid-row: 22; 
+        -ms-grid-row-span: 3; 
+        -ms-grid-column: 3;
+        grid-area: tabla2; 
+    }
+
+    .content-container .content .table.three { 
+        -ms-grid-row: 31; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
+        grid-area: tabla3; 
+    }
 
     .content-container .content .title {
         --Titulo: 59rem;

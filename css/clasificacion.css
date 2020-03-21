@@ -1,4 +1,5 @@
 .content-container .content {
+    -ms-grid-rows: repeat(10, auto);
     grid-template-rows: repeat(10, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."
@@ -12,15 +13,41 @@
                          "t4      t4      imagen1";
 }
 
-    .content-container .content .image.one { 
+    .content-container .content .image.one {
+        -ms-grid-row: 3; 
+        -ms-grid-row-span: 8; 
+        -ms-grid-column: 3;
         grid-area: imagen1;
         background: url("../images/adhy-savala-unsplash.jpg") no-repeat 35% center/cover;
     }
 
-    .content-container .content .parrafo.one { grid-area: texto1; }
-    .content-container .content .parrafo.two { grid-area: texto2; }
-    .content-container .content .parrafo.three { grid-area: texto3; }
-    .content-container .content .parrafo.four { grid-area: texto4; }
+    .content-container .content .parrafo.one { 
+        -ms-grid-row: 3; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto1; 
+    }
+
+    .content-container .content .parrafo.two { 
+        -ms-grid-row: 4; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto2; 
+    }
+
+    .content-container .content .parrafo.three { 
+        -ms-grid-row: 5; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto3; 
+    }
+
+    .content-container .content .parrafo.four { 
+        -ms-grid-row: 6; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto4; 
+    }
 
     .content-container .content .tarjeta {
         font-style: italic;
@@ -33,33 +60,49 @@
     }
 
         .content-container .content .tarjeta.one {
+            -ms-grid-row: 7;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
             grid-area: t1;
             background: #ED213A;
-            background: -webkit-linear-gradient(to top, #93291E, #ED213A); 
+            background: -webkit-linear-gradient(to top, #93291E, #ED213A);
+            background: -o-linear-gradient(bottom, #93291E, #ED213A); 
             background: linear-gradient(to top, #93291E, #ED213A);
             border-color: var(--rojo);
         }
 
         .content-container .content .tarjeta.two {
+            -ms-grid-row: 8;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
             grid-area: t2;
             background: #F2994A;
             background: -webkit-linear-gradient(to bottom, #F2C94C, #F2994A);
+            background: -o-linear-gradient(top, #F2C94C, #F2994A);
             background: linear-gradient(to bottom, #F2C94C, #F2994A);
             border-color: var(--naranja);
         }
 
         .content-container .content .tarjeta.three {
+            -ms-grid-row: 9;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
             grid-area: t3;
             background: #56ab2f;
             background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);
+            background: -o-linear-gradient(top, #a8e063, #56ab2f);
             background: linear-gradient(to bottom, #a8e063, #56ab2f);
             border-color: #488f27;
         }
 
         .content-container .content .tarjeta.four {
+            -ms-grid-row: 10;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 2;
             grid-area: t4;
             background: #212121;
             background: -webkit-linear-gradient(to bottom, #434343, #212121);
+            background: -o-linear-gradient(top, #434343, #212121);
             background: linear-gradient(to bottom, #434343, #212121);
             border-color: var(--grisUI);
         }

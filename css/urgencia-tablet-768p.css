@@ -1,4 +1,5 @@
-.content-container .content {   
+.content-container .content {
+    -ms-grid-rows: repeat(21, auto);
     grid-template-rows: repeat(21, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."
@@ -25,6 +26,7 @@
 
     /* Night-mode */
     body.night .content-container .content {
+        -ms-grid-rows: repeat(22, auto);
         grid-template-rows: repeat(22, auto);
         grid-template-areas: "titulo  titulo  titulo"
                              ".       .       ."

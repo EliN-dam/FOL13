@@ -4,7 +4,8 @@
     height: 56.25rem;
     width: 70%;
     max-width: 53.5625rem;
-    box-shadow: var(--sombraCajas);
+    -webkit-box-shadow: var(--sombraCajas);
+            box-shadow: var(--sombraCajas);
     overflow: hidden;
     background: var(--grisClaro);
 }
@@ -16,6 +17,8 @@
         top: 0;
         left: 0;
         opacity: 0;
+        -webkit-transition: opacity .6s ease-in-out;
+        -o-transition: opacity .6s ease-in-out;
         transition: opacity .6s ease-in-out;
     }
 
@@ -26,7 +29,11 @@
         .content-container .slider .images .slide.current .title {
             opacity: 1;
             z-index: 1;
-            transform: translateX(-31rem);
+            -webkit-transform: translateX(-31rem);
+                -ms-transform: translateX(-31rem);
+                    transform: translateX(-31rem);
+            -webkit-transition: all .7s ease-in-out .3s;
+            -o-transition: all .7s ease-in-out .3s;
             transition: all .7s ease-in-out .3s;
         }
 
@@ -64,6 +71,8 @@
         }
 
             .content-container .slider .images .slide .title h1 {
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
                 transition: all 1s ease;
             }
 
@@ -81,13 +90,19 @@
         border: none;
         outline: none;
         font-size: 2.5rem;
-        transform: scale(.7);
+        -webkit-transform: scale(.7);
+            -ms-transform: scale(.7);
+                transform: scale(.7);
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
     }
 
         .content-container .slider .nav button:hover {           
             opacity: 1;
-            transform: scale(1);
+            -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                    transform: scale(1);
             /*text-shadow: var(--sombraIconos);*/
         }
 

@@ -1,6 +1,6 @@
 .content-container .content {
     padding: 1.25rem;
-    width: 90%;
+    width: 100%;
     row-gap: .7rem;
 }
 
@@ -8,6 +8,11 @@
         padding: 1.1rem;
         font-size: .95rem;
     }
+
+    .content-container .content .report button {
+        font-size: 1.75rem;
+    }
+    
 
 .content-container .overlay .popup {
     width: 31.25rem;
@@ -23,9 +28,7 @@
         font-size: .9rem;
     }
 
-    .content-container .content .report button {
-        top: .5rem;
-        right: .5rem;
-        font-size: 2rem;
+    .content-container .overlay .popup {
+        width: 29rem;
     }
 }

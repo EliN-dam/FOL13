@@ -13,7 +13,9 @@ header {
         }
 
             header button.active::after {
-                transform: translateX(1.3rem);
+                -webkit-transform: translateX(1.3rem);
+                    -ms-transform: translateX(1.3rem);
+                        transform: translateX(1.3rem);
             }
 
         header button::after {
@@ -30,7 +32,11 @@ header {
     }
 
         header nav ul {
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+               -ms-flex-direction: column;
+                   flex-direction: column;
+            -ms-flex-pack: distribute;
             justify-content: space-around;
         }
 
@@ -62,4 +68,3 @@ header {
             width: 20px;
             height: 2px;
         }
-

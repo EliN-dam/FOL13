@@ -1,5 +1,6 @@
-.content-container .content {   
-    grid-template-rows: repeat(14, auto) ;
+.content-container .content {
+    -ms-grid-rows: repeat(14, auto);
+    grid-template-rows: repeat(14, auto);
     grid-template-areas: "titulo  titulo  titulo"
                          ".       .       ."
                          "texto1  texto1  imagen1"
@@ -17,28 +18,80 @@
 }
 
     .content-container .content .image.one { 
+        -ms-grid-row: 3; 
+        -ms-grid-row-span: 7; 
+        -ms-grid-column: 3;
         grid-area: imagen1;
         background: url("../images/daniela-santos-unsplash.jpg") no-repeat center center/cover;
     }
 
     .content-container .content .image.two {
+        -ms-grid-row: 10;
+        -ms-grid-row-span: 5;
+        -ms-grid-column: 1;
         grid-area: imagen2;
         background: url("../images/sebastian-j-unsplash.jpg") no-repeat center center/cover;
     }
 
-    .content-container .content .parrafo.one { grid-area: texto1; }
-    .content-container .content .parrafo.two { grid-area: texto2; }
-    .content-container .content .parrafo.three { grid-area: texto3; }
-    .content-container .content .parrafo.four { grid-area: texto4; }
-    .content-container .content .parrafo.five { grid-area: texto5; }
-    .content-container .content .parrafo.six { grid-area: texto6; }
+    .content-container .content .parrafo.one {
+        -ms-grid-row: 3; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2; 
+        grid-area: texto1; 
+    }
+
+    .content-container .content .parrafo.two { 
+        -ms-grid-row: 4; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto2; 
+    }
+
+    .content-container .content .parrafo.three {
+        -ms-grid-row: 8; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: texto3; 
+    }
+
+    .content-container .content .parrafo.four {
+        -ms-grid-row: 12; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
+        grid-area: texto4; 
+    }
+
+    .content-container .content .parrafo.five {
+        -ms-grid-row: 13; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
+        grid-area: texto5; 
+    }
+
+    .content-container .content .parrafo.six {
+        -ms-grid-row: 14; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
+        grid-area: texto6; 
+    }
     
         .content-container .content .parrafo ol {
             padding-left: 1.875rem;
         }
 
-    .content-container .content .subtitle.one { grid-area: sub1; }
-    .content-container .content .subtitle.two { grid-area: sub2; }
+    .content-container .content .subtitle.one { 
+        -ms-grid-row: 6; 
+        -ms-grid-column: 1; 
+        -ms-grid-column-span: 2;
+        grid-area: sub1; 
+    }
+
+    .content-container .content .subtitle.two { 
+        -ms-grid-row: 10; 
+        -ms-grid-column: 2; 
+        -ms-grid-column-span: 2;
+        grid-area: sub2; 
+    }
 
     .content-container .content .title {
         --Titulo: 58rem;
