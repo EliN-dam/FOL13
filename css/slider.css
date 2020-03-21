@@ -63,7 +63,7 @@
             position: absolute;
             top: 4.0625rem;
             right: -31rem;
-            background: #FFFFFFB3;
+            background: hsla(0, 0%, 100%, 0.702);
             color: var(--grisSubtitulos);
             padding: 1.5rem;
             opacity: 0;
