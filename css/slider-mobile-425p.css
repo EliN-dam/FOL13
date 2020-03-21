@@ -17,4 +17,10 @@
 
         .content-container .slider .images .slide .title h1 {
             font-size: 1.8rem;
-        }      
+        }
+
+    .content-container .slider .nav button:hover {
+        -webkit-transform: scale(.7);
+            -ms-transform: scale(.7);
+                transform: scale(.7);
+    }
