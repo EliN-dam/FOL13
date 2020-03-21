@@ -124,6 +124,10 @@
         grid-area: texto5; 
     }
 
+        .content-container .content .parrafo.five p {
+            margin-top: .5rem;
+        }
+
     .content-container .content .parrafo.six { 
         -ms-grid-row: 18; 
         -ms-grid-column: 1;
